@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
 }
 
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .title {
@@ -27,12 +27,12 @@
 
 .controls {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -91,7 +91,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 .verbTable {
@@ -123,19 +123,44 @@
   color: #2c3e50;
 }
 
+/* Remove all default borders */
+.verbTable tbody tr {
+  border: none;
+}
+
+/* Add bolder border at the start of each section */
+.verbTable tbody tr.sectionStart {
+  border-top: 3px solid #adb5bd;
+  margin-top: 4px;
+}
+
+/* Remove top border from the very first row */
+.verbTable tbody tr:first-child {
+  border-top: none;
+  margin-top: 0;
+}
+
+/* Add subtle border after the last row of each section */
+.verbTable tbody tr[data-person^="1"]:last-child,
+.verbTable tbody tr[data-person^="2"]:last-child {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
 .verbTable tbody tr:nth-child(even) {
-  background: #f8f9fa;
+  background: #fff8e1;
 }
 
-.verbTable tbody tr:hover {
-  background: #e7f3ff;
+/* except for the first row */
+.verbTable tbody tr:nth-child(odd):not(:first-child) {
+  background: #f0fff0;
 }
 
-.personLabel {
-  font-weight: 600;
-  color: #495057;
-  background: #f1f3f5 !important;
-  font-size: 1.5rem !important;
+/* Make person label cells bold */
+.verbTable tbody tr td:first-child {
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 .loading {
