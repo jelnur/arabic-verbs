@@ -31,7 +31,12 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build with Next.js
-        run: yarn export
+        run: |
+          yarn build
+          cp -r out/_next out/next
+          find out -type f -name '*.html' -exec sed -i '' 's|/_next/|/arabic-verbs/_next/|g' {} \;
+          rm -rf out/_next
+          mv out/next out/_next
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
