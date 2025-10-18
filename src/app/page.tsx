@@ -231,7 +231,7 @@ export default function Home() {
           )}
         </div>
         <div className={styles.version}>
-          v{packageJson.version}-beta
+          v{packageJson.version}
         </div>
       </main>
     </div>
