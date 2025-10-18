@@ -230,8 +230,18 @@ export default function Home() {
             renderTable()
           )}
         </div>
-        <div className={styles.version}>
-          v{packageJson.version}
+
+        <div className={styles.footer}>
+          <a
+            href="https://github.com/jelnur/arabic-verbs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.githubLink}
+          >
+            Edit on GitHub
+          </a>
+
+          <span className={styles.version}>v{packageJson.version}</span>
         </div>
       </main>
     </div>
