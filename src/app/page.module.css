@@ -227,6 +227,16 @@
   white-space: wrap;
 }
 
+/* Mobile responsive: smaller label column, larger verb text */
+@media (max-width: 768px) {
+  .verbTable tbody tr td:first-child {
+    max-width: 120px;
+    width: 120px;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+
 /* Bolder border between shexs (person) and mufred (singular) columns */
 .verbTable td:nth-child(2),
 .verbTable th:nth-child(2) {
@@ -251,10 +261,15 @@
     gap: 1rem;
   }
 
-  .verbTable th,
+  /* Make verb cells (not labels) have bigger font on mobile */
+  .verbTable th {
+    padding: 0.75rem 0.5rem;
+    font-size: 1.5rem;
+  }
+
   .verbTable td {
-    padding: 0.75rem;
-    font-size: 1.25rem;
+    padding: 0.75rem 0.5rem;
+    font-size: 2rem;
   }
 
   .personLabel {
