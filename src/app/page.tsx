@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import styles from './page.module.css';
 import packageJson from '../../package.json';
+import { MuiSelect } from '@/components/ui/mui-select';
 
 interface VerbRow {
   tense: string;
@@ -14,7 +15,7 @@ interface VerbRow {
 
 const verbForms = [
   { id: 'salim', name: 'سَالِمٌ', verbs: ['كَتَبَ', 'دَخَلَ'] },
-  { id: 'muz', name: 'مُعْتَلٌّ', verbs: [] },
+  { id: 'muz', name: 'مُعْتَلٌّ', verbs: [] },
   { id: 'mudaaf', name: 'مُضَاعَفٌ', verbs: ['مَدَّ'] },
 ];
 
@@ -25,13 +26,13 @@ const tenses = [
 ];
 
 const personLabels: { [key: string]: string } = {
-  '1': 'المُتَكَلِّمُ',
-  '2-muzekker': 'المُخَاطَبُ المُذَكَّرُ',
-  '2-muzekker-modern': 'المُخَاطَبُ المُذَكَّرُ (حَدِيثٌ)',
-  '2-muennes': 'المُخَاطَبَةُ المُؤَنَّثَةُ',
-  '2-muennes-modern': 'المُخَاطَبَةُ المُؤَنَّثَةُ (حَدِيثٌ)',
-  '3-muzekker': 'الغَائِبُ المُذَكَّرُ',
-  '3-muennes': 'الغَائِبَةُ المُؤَنَّثَةُ',
+  '1': 'المُتَكَلِّمُ',
+  '2-muzekker': 'المُخَاطَبُ المُذَكَّرُ',
+  '2-muzekker-modern': 'المُخَاطَبُ المُذَكَّرُ (حَدِيثٌ)',
+  '2-muennes': 'المُخَاطَبَةُ المُؤَنَّثَةُ',
+  '2-muennes-modern': 'المُخَاطَبَةُ المُؤَنَّثَةُ (حَدِيثٌ)',
+  '3-muzekker': 'الغَائِبُ المُذَكَّرُ',
+  '3-muennes': 'الغَائِبَةُ المُؤَنَّثَةُ',
 };
 
 const personOrder = ['1', '2-muzekker', '2-muzekker-modern', '2-muennes', '2-muennes-modern', '3-muzekker', '3-muennes'];
@@ -44,42 +45,29 @@ interface StoredSelections {
   tense: string;
 }
 
-const getInitialState = (): { verbForm: string; verbIndex: number; tense: string } => {
-  if (typeof window === 'undefined') {
-    return {
-      verbForm: verbForms[0].id,
-      verbIndex: 0,
-      tense: tenses[0].id,
-    };
-  }
-
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      const { verbForm, verbIndex, tense } = JSON.parse(saved);
-      return {
-        verbForm: verbForm || verbForms[0].id,
-        verbIndex: typeof verbIndex === 'number' ? verbIndex : 0,
-        tense: tense || tenses[0].id,
-      };
-    }
-  } catch (error) {
-    console.error('Error loading saved selections:', error);
-  }
-
-  return {
-    verbForm: verbForms[0].id,
-    verbIndex: 0,
-    tense: tenses[0].id,
-  };
-};
-
 export default function Home() {
-  const [selectedVerbForm, setSelectedVerbForm] = useState<string>(() => getInitialState().verbForm);
-  const [selectedTense, setSelectedTense] = useState<string>(() => getInitialState().tense);
-  const [selectedVerbIndex, setSelectedVerbIndex] = useState<number>(() => getInitialState().verbIndex);
+  const [selectedVerbForm, setSelectedVerbForm] = useState<string>(verbForms[0].id);
+  const [selectedTense, setSelectedTense] = useState<string>(tenses[0].id);
+  const [selectedVerbIndex, setSelectedVerbIndex] = useState<number>(0);
   const [verbData, setVerbData] = useState<VerbRow[]>([]);
   const [loading, setLoading] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  // Load saved selections from localStorage after hydration
+  useEffect(() => {
+    setIsHydrated(true);
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        const { verbForm, verbIndex, tense } = JSON.parse(saved) as StoredSelections;
+        if (verbForm) setSelectedVerbForm(verbForm);
+        if (typeof verbIndex === 'number') setSelectedVerbIndex(verbIndex);
+        if (tense) setSelectedTense(tense);
+      }
+    } catch (error) {
+      console.error('Error loading saved selections:', error);
+    }
+  }, []);
 
   const loadVerbData = useCallback(async (skipLoading = false) => {
     if (!skipLoading) {
@@ -117,15 +105,17 @@ export default function Home() {
     loadVerbData();
   }, [loadVerbData]);
 
-  // Save selections to localStorage when they change
+  // Save selections to localStorage when they change (only after hydration)
   useEffect(() => {
+    if (!isHydrated) return;
+
     const selections: StoredSelections = {
       verbForm: selectedVerbForm,
       verbIndex: selectedVerbIndex,
       tense: selectedTense,
     };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(selections));
-  }, [selectedVerbForm, selectedVerbIndex, selectedTense]);
+  }, [selectedVerbForm, selectedVerbIndex, selectedTense, isHydrated]);
 
   const renderTable = () => {
     // Filter data by selected tense
@@ -179,53 +169,63 @@ export default function Home() {
     );
   };
 
+  // Handle verb form change and auto-select first verb
+  const handleVerbFormChange = (value: string | number) => {
+    setSelectedVerbForm(value as string);
+    // Auto-select the first verb if available
+    const newForm = verbForms.find(form => form.id === value);
+    if (newForm && newForm.verbs.length > 0) {
+      setSelectedVerbIndex(0);
+    }
+  };
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <h2 className={styles.title}>
+          تَعَلَّمْ تَصْرِيفَ الأَفْعَالِ الْعَرَبِيَّةِ
+        </h2>
         <div className={styles.controls}>
           <div className={styles.controlGroup}>
-            <label>نَوْعُ الفِعْلِ:</label>
-            <select
+            <MuiSelect
+              // label="نَوْعُ الفِعْلِ:"
+              // labelId="verb-form-label"
               value={selectedVerbForm}
-              onChange={(e) => setSelectedVerbForm(e.target.value)}
-              className={styles.select}
-            >
-              {verbForms.map(form => (
-                <option key={form.id} value={form.id}>{form.name}</option>
-              ))}
-            </select>
+              onChange={handleVerbFormChange}
+              options={verbForms.map(form => ({ value: form.id, label: form.name }))}
+              className={styles.formControl}
+            />
           </div>
 
           <div className={styles.controlGroup}>
-            <label>الفِعْلُ:</label>
-            <select
+            <MuiSelect
+              // label="الفِعْلُ:"
+              // labelId="verb-label"
               value={selectedVerbIndex}
-              onChange={(e) => setSelectedVerbIndex(parseInt(e.target.value))}
-              className={styles.select}
-            >
-              {verbForms.find(form => form.id === selectedVerbForm)?.verbs.map((verb, index) => (
-                <option key={index} value={index}>{verb}</option>
-              ))}
-            </select>
+              onChange={(value) => setSelectedVerbIndex(value as number)}
+              options={verbForms.find(form => form.id === selectedVerbForm)?.verbs.map((verb, index) => ({
+                value: index,
+                label: verb
+              })) ?? []}
+              className={styles.formControl}
+            />
           </div>
 
           <div className={styles.controlGroup}>
-            <label>الزَّمَنُ:</label>
-            <select
+            <MuiSelect
+              // label="الزَّمَنُ:"
+              // labelId="tense-label"
               value={selectedTense}
-              onChange={(e) => setSelectedTense(e.target.value)}
-              className={styles.select}
-            >
-              {tenses.map(tense => (
-                <option key={tense.id} value={tense.id}>{tense.name}</option>
-              ))}
-            </select>
+              onChange={(value) => setSelectedTense(value as string)}
+              options={tenses.map(tense => ({ value: tense.id, label: tense.name }))}
+              className={styles.formControl}
+            />
           </div>
         </div>
 
         <div className={styles.tableContainer}>
           {loading ? (
-            <div className={styles.loading}>جَارٍ التَّحْمِيلُ...</div>
+            <div className={styles.loading}>جَارٍ التَّحْمِيلُ...</div>
           ) : (
             renderTable()
           )}

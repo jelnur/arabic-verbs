@@ -33,9 +33,9 @@
   align-items: center;
   width: 100%;
   padding: 1rem;
-  background: white;
+  /* background: white; */
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .controlGroup {
@@ -50,6 +50,19 @@
   font-weight: 500;
   color: #495057;
   direction: rtl;
+}
+
+.formControl {
+  min-width: 180px;
+}
+
+.inputLabel {
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+  color: #495057 !important;
+  direction: rtl !important;
+  text-align: center !important;
+  transform-origin: center !important;
 }
 
 .select {
