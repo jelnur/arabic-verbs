@@ -16,7 +16,7 @@ interface VerbRow {
 const verbForms = [
   { id: 'salim', name: 'سَالِمٌ', verbs: ['كَتَبَ', 'دَخَلَ'] },
   { id: 'muz', name: 'مُعْتَلٌّ', verbs: [] },
-  { id: 'mudaaf', name: 'مُضَاعَفٌ', verbs: ['مَدَّ'] },
+  { id: 'mudaaf', name: 'مُضَاعَفٌ', verbs: ['سَدَّ', 'فَرَّ'] },
 ];
 
 const tenses = [
@@ -28,14 +28,14 @@ const tenses = [
 const personLabels: { [key: string]: string } = {
   '1': 'المُتَكَلِّمُ',
   '2-muzekker': 'المُخَاطَبُ المُذَكَّرُ',
-  '2-muzekker-modern': 'المُخَاطَبُ المُذَكَّرُ (حَدِيثٌ)',
   '2-muennes': 'المُخَاطَبَةُ المُؤَنَّثَةُ',
+  '2-muzekker-modern': 'المُخَاطَبُ المُذَكَّرُ (حَدِيثٌ)',
   '2-muennes-modern': 'المُخَاطَبَةُ المُؤَنَّثَةُ (حَدِيثٌ)',
   '3-muzekker': 'الغَائِبُ المُذَكَّرُ',
   '3-muennes': 'الغَائِبَةُ المُؤَنَّثَةُ',
 };
 
-const personOrder = ['1', '2-muzekker', '2-muzekker-modern', '2-muennes', '2-muennes-modern', '3-muzekker', '3-muennes'];
+const personOrder = Object.keys(personLabels);
 
 const STORAGE_KEY = 'arabicVerbsSelections';
 
