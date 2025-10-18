@@ -222,6 +222,9 @@
 .verbTable tbody tr td:first-child {
   font-weight: bold;
   font-size: 1.5rem;
+  max-width: 320px;
+  width: 320px;
+  white-space: wrap;
 }
 
 /* Bolder border between shexs (person) and mufred (singular) columns */

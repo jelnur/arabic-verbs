@@ -2,6 +2,10 @@
 
 A static website for learning Arabic verb conjugations (تعلم تصريف الأفعال العربية).
 
+## Live Demo
+
+https://jelnur.github.io/arabic-verbs/
+
 ## Features
 
 - **Verb Forms**: Learn different verb forms:
