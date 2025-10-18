@@ -1,130 +1,47 @@
 # Arabic Verb Conjugation Learning App
 
-A static website for learning Arabic verb tenses (تعلم تصريف الأفعال العربية).
+A static website for learning Arabic verb conjugations (تعلم تصريف الأفعال العربية).
 
 ## Features
 
-- **Verb Forms**: Learn different verb forms including:
-  - سالم (Salim) - Sound verbs
-  - مضاعف (Mudaaf) - Doubled verbs
-  - معتل (Muz) - Weak verbs
+- **Verb Forms**: Learn different verb forms:
+  - Salim (سَالِمٌ) - Sound verbs (e.g., كَتَبَ، دَخَلَ)
+  - Mudaaf (مُضَاعَفٌ) - Doubled verbs (e.g., مَدَّ)
+  - Muz (مُعْتَلٌّ) - Weak verbs (coming soon)
 
-- **Tenses**: Practice conjugations in:
-  - الماضي (Mazi) - Past tense
-  - المضارع (Muzari) - Present tense
-  - الأمر (Amr) - Imperative
-
-- **Interactive Table**: View conjugations organized by person (متكلم، مخاطب، غائب), gender (مذكر، مؤنث), and number (مفرد، تثنية، جمع)
+- **Conjugation Table**: View verb conjugations organized by:
+  - Person (1st, 2nd, 3rd)
+  - Gender (مذكر - masculine, مؤنث - feminine)
+  - Number (مفرد - singular, تثنية - dual, جمع - plural)
 
 ## Development
 
 ```bash
-# Install dependencies
-yarn
-
-# Run development server
-yarn dev
-
-# Open http://localhost:3000
+yarn         # Install dependencies
+yarn dev     # Run development server
 ```
 
-## Deployment to GitHub Pages
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 1. Build the static site
+## Deployment
 
 ```bash
-yarn export
+yarn export  # Build static site to 'out' directory
 ```
 
-This will create an `out` directory with your static site.
-
-### 2. Update next.config.ts
-
-Make sure the `basePath` in `next.config.ts` matches your repository name:
+For GitHub Pages, update `basePath` in `next.config.ts` if needed:
 
 ```typescript
-basePath: process.env.NODE_ENV === 'production' ? '/arabic-verbs' : '',
+basePath: process.env.NODE_ENV === 'production' ? '/your-repo-name' : ''
 ```
-
-Change `/arabic-verbs` to match your GitHub repository name.
-
-### 3. Deploy to GitHub Pages
-
-#### Option A: Using GitHub Actions (Recommended)
-
-Create `.github/workflows/deploy.yml`:
-
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [main]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: yarn install
-      - run: yarn export
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
-```
-
-Then:
-1. Push your code to GitHub
-2. Go to Settings > Pages
-3. Set Source to "GitHub Actions"
-
-#### Option B: Manual Deployment
-
-```bash
-# Build
-yarn export
-
-# Deploy the out directory to gh-pages branch
-yarn gh-pages -d out
-```
-
-Then:
-1. Go to Settings > Pages
-2. Set Source to "Deploy from a branch"
-3. Select the `gh-pages` branch
 
 ## Adding New Verbs
 
 To add new verbs or verb forms:
 
-1. Create CSV files in `public/verbs/` following the naming pattern: `{verbform}-{tense}.csv`
-2. Update the `verbForms` array in `src/app/page.tsx`
-3. CSV format:
-
-```csv
-person,gender,number,form
-أنا,,ferd,كَتَبْتُ
-نحن,,cem,كَتَبْنَا
-...
-```
+1. Duplicate an existing CSV file in `public/verbs/` following the naming pattern: `{verbform}-{index}.csv`
+2. Edit the new CSV file to add the verb forms
+3. Update the `verbForms` array in `src/app/page.tsx`
 
 ## Technologies
 
