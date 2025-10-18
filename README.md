@@ -20,10 +20,10 @@ A static website for learning Arabic verb tenses (تعلم تصريف الأفع
 
 ```bash
 # Install dependencies
-npm install
+yarn
 
 # Run development server
-npm run dev
+yarn dev
 
 # Open http://localhost:3000
 ```
@@ -33,7 +33,7 @@ npm run dev
 ### 1. Build the static site
 
 ```bash
-npm run export
+yarn export
 ```
 
 This will create an `out` directory with your static site.
@@ -74,8 +74,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm ci
-      - run: npm run export
+      - run: yarn install
+      - run: yarn export
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
@@ -100,38 +100,16 @@ Then:
 
 ```bash
 # Build
-npm run export
+yarn export
 
 # Deploy the out directory to gh-pages branch
-npx gh-pages -d out
+yarn gh-pages -d out
 ```
 
 Then:
 1. Go to Settings > Pages
 2. Set Source to "Deploy from a branch"
 3. Select the `gh-pages` branch
-
-## Project Structure
-
-```
-├── public/
-│   └── verbs/          # CSV files with verb conjugations
-│       ├── salim-mazi.csv
-│       ├── salim-muzari.csv
-│       ├── salim-amr.csv
-│       ├── mudaaf-mazi.csv
-│       ├── mudaaf-muzari.csv
-│       ├── mudaaf-amr.csv
-│       ├── muz-mazi.csv
-│       ├── muz-muzari.csv
-│       └── muz-amr.csv
-└── src/
-    └── app/
-        ├── page.tsx    # Main application component
-        ├── page.module.css
-        ├── globals.css
-        └── layout.tsx
-```
 
 ## Adding New Verbs
 
@@ -154,7 +132,7 @@ person,gender,number,form
 - React 19.1.0
 - TypeScript
 - CSS Modules
-- Google Fonts (Amiri & Cairo)
+- Google Fonts (Cheherazade New, Amir)
 
 ## License
 

@@ -1,19 +1,20 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import styles from './page.module.css';
 
-interface VerbForm {
+interface VerbRow {
+  tense: string;
+  cem: string;
+  tesniye: string;
+  ferd: string;
   person: string;
-  gender: string;
-  number: string;
-  form: string;
 }
 
 const verbForms = [
-  { id: 'salim', name: 'سالم', verb: 'كَتَبَ' },
-  { id: 'mudaaf', name: 'مضاعف', verb: 'مَدَّ' },
-  { id: 'muz', name: 'معتل', verb: 'رَمَى' },
+  { id: 'salim', name: 'سالم', verbs: ['كَتَبَ'] },
+  { id: 'mudaaf', name: 'مضاعف', verbs: ['مَدَّ'] },
+  { id: 'muz', name: 'معتل', verbs: ['رَمَى'] },
 ];
 
 const tenses = [
@@ -22,32 +23,39 @@ const tenses = [
   { id: 'amr', name: 'الأمر' },
 ];
 
+const personLabels: { [key: string]: string } = {
+  '1': 'المتكلم',
+  '2-muzekker': 'المخاطب المذكر',
+  '2-muennes': 'المخاطب المؤنث',
+  '3-muzekker': 'الغائب المذكر',
+  '3-muennes': 'الغائب المؤنث',
+};
+
+const personOrder = ['1', '2-muzekker', '2-muennes', '3-muzekker', '3-muennes'];
+
 export default function Home() {
   const [selectedVerbForm, setSelectedVerbForm] = useState(verbForms[0].id);
   const [selectedTense, setSelectedTense] = useState(tenses[0].id);
-  const [verbData, setVerbData] = useState<VerbForm[]>([]);
+  const [selectedVerbIndex, setSelectedVerbIndex] = useState(0);
+  const [verbData, setVerbData] = useState<VerbRow[]>([]);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    loadVerbData();
-  }, [selectedVerbForm, selectedTense]);
-
-  const loadVerbData = async () => {
+  const loadVerbData = useCallback(async () => {
     setLoading(true);
     try {
       const basePath = process.env.NODE_ENV === 'production' ? '/arabic-verbs' : '';
-      const response = await fetch(`${basePath}/verbs/${selectedVerbForm}-${selectedTense}.csv`);
+      const response = await fetch(`${basePath}/verbs/${selectedVerbForm}-${selectedVerbIndex}.csv`);
       const text = await response.text();
       const lines = text.trim().split('\n');
-      const headers = lines[0].split(',');
 
       const data = lines.slice(1).map(line => {
         const values = line.split(',');
         return {
-          person: values[0] || '',
-          gender: values[1] || '',
-          number: values[2] || '',
-          form: values[3] || '',
+          tense: values[0] || '',
+          cem: values[1] || '',
+          tesniye: values[2] || '',
+          ferd: values[3] || '',
+          person: values[4] || '',
         };
       });
 
@@ -57,25 +65,15 @@ export default function Home() {
       setVerbData([]);
     }
     setLoading(false);
-  };
+  }, [selectedVerbIndex, selectedVerbForm]);
 
-  const getSelectedVerb = () => {
-    return verbForms.find(v => v.id === selectedVerbForm)?.verb || '';
-  };
+  useEffect(() => {
+    loadVerbData();
+  }, [loadVerbData]);
 
   const renderTable = () => {
-    const groupedData: { [key: string]: VerbForm[] } = {};
-
-    verbData.forEach(item => {
-      const personKey = item.person;
-      if (!groupedData[personKey]) {
-        groupedData[personKey] = [];
-      }
-      groupedData[personKey].push(item);
-    });
-
-    const personOrder = ['أنا', 'أنتَ', 'هو'];
-    const numberOrder = ['ferd', 'tesniye', 'cem'];
+    // Filter data by selected tense
+    const filteredData = verbData.filter(row => row.tense === selectedTense);
 
     return (
       <table className={styles.verbTable}>
@@ -89,45 +87,22 @@ export default function Home() {
         </thead>
         <tbody>
           {personOrder.map(person => {
-            const personData = groupedData[person] || [];
-            const muzekkerData = personData.filter(d => d.gender === 'muzekker' || !d.gender);
-            const moennesData = personData.filter(d => d.gender === 'muennes');
+            const row = filteredData.find(d => d.person === person);
+            if (!row) return null;
 
-            const rows = [];
+            // Skip rows where all verb forms are empty
+            if (!row.ferd && !row.tesniye && !row.cem) return null;
 
-            if (muzekkerData.length > 0 || person === 'أنا') {
-              const rowData = person === 'أنا' || person === 'نحن' ? personData : muzekkerData;
-              rows.push(
-                <tr key={`${person}-m`}>
-                  <td className={styles.personLabel}>
-                    {person === 'أنا' && 'المتكلم'}
-                    {person === 'أنتَ' && 'المخاطب المذكر'}
-                    {person === 'هو' && 'الغائب المذكر'}
-                  </td>
-                  {numberOrder.map(num => {
-                    const cell = rowData.find(d => d.number === num);
-                    return <td key={num}>{cell?.form || '-'}</td>;
-                  })}
-                </tr>
-              );
-            }
-
-            if (moennesData.length > 0) {
-              rows.push(
-                <tr key={`${person}-f`}>
-                  <td className={styles.personLabel}>
-                    {person === 'أنتَ' && 'المخاطب المؤنث'}
-                    {person === 'هو' && 'الغائب المؤنث'}
-                  </td>
-                  {numberOrder.map(num => {
-                    const cell = moennesData.find(d => d.number === num);
-                    return <td key={num}>{cell?.form || '-'}</td>;
-                  })}
-                </tr>
-              );
-            }
-
-            return rows;
+            return (
+              <tr key={person}>
+                <td className={styles.personLabel}>
+                  {personLabels[person]}
+                </td>
+                <td>{row.ferd}</td>
+                <td>{row.tesniye}</td>
+                <td>{row.cem}</td>
+              </tr>
+            );
           })}
         </tbody>
       </table>
@@ -137,8 +112,6 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1 className={styles.title}>تعلم تصريف الأفعال العربية</h1>
-
         <div className={styles.controls}>
           <div className={styles.controlGroup}>
             <label>نوع الفعل:</label>
@@ -155,7 +128,15 @@ export default function Home() {
 
           <div className={styles.controlGroup}>
             <label>الفعل:</label>
-            <div className={styles.verbDisplay}>{getSelectedVerb()}</div>
+            <select
+              value={selectedVerbIndex}
+              onChange={(e) => setSelectedVerbIndex(parseInt(e.target.value))}
+              className={styles.select}
+            >
+              {verbForms.find(form => form.id === selectedVerbForm)?.verbs.map((verb, index) => (
+                <option key={index} value={index}>{verb}</option>
+              ))}
+            </select>
           </div>
 
           <div className={styles.controlGroup}>

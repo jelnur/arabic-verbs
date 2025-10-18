@@ -1,0 +1,16 @@
+tense,cem,tesniye,ferd,person
+mazi,كَتَبْنَا,,كَتَبْتُ,1
+mazi,كَتَبْتُمْ,كَتَبْتُمَا,كَتَبْتَ,2-muzekker
+mazi,كَتَبْتُنَّ,كَتَبْتُمَا,كَتَبْتِ,2-muennes
+mazi,كَتَبُوا,كَتَبَا,كَتَبَ,3-muzekker
+mazi,كَتَبْنَ,,كَتَبَتْ,3-muennes
+muzari,نَكْتُبُ,,أَكْتُبُ,1
+muzari,تَكْتُبُونَ,تَكْتُبَانِ,تَكْتُبُ,2-muzekker
+muzari,تَكْتُبْنَ,تَكْتُبَانِ,تَكْتُبِينَ,2-muennes
+muzari,يَكْتُبُونَ,يَكْتُبَانِ,يَكْتُبُ,3-muzekker
+muzari,يَكْتُبْنَ,,تَكْتُبُ,3-muennes
+amr,,,,1
+amr,اُكْتُبُوا,اُكْتُبَا,اُكْتُبْ,2-muzekker
+amr,اُكْتُبْنَ,اُكْتُبَا,اُكْتُبِي,2-muennes
+amr,,,,3-muzekker
+amr,,,,3-muennes
