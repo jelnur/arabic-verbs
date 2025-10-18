@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import styles from './page.module.css';
+import packageJson from '../../package.json';
 
 interface VerbRow {
   tense: string;
@@ -228,6 +229,9 @@ export default function Home() {
           ) : (
             renderTable()
           )}
+        </div>
+        <div className={styles.version}>
+          v{packageJson.version}-beta
         </div>
       </main>
     </div>
