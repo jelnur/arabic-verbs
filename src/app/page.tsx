@@ -9,8 +9,8 @@ import styles from './page.module.css'
 import packageJson from '../../package.json'
 
 const verbForms = [
-  { id: 'salim', name: 'سَالِمٌ', verbs: ['كَتَبَ', 'دَخَلَ'] },
-  { id: 'muz', name: 'مُعْتَلٌّ', verbs: [] },
+  { id: 'salim', name: 'سَالِمٌ', verbs: ['كَتَبَ', 'دَخَلَ', 'ذَهَبَ'] },
+  { id: 'muz', name: 'مُعْتَلٌّ', verbs: ['اَخَذَ'] },
   { id: 'mudaaf', name: 'مُضَاعَفٌ', verbs: ['سَدَّ', 'فَرَّ'] },
 ]
 
