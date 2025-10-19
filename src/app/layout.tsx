@@ -13,7 +13,7 @@ const scheherazade = Scheherazade_New({
 })
 
 export const metadata: Metadata = {
-  title: 'تعلم تصريف الأفعال العربية - Arabic Verb Conjugation',
+  title: 'تعلم تصريف الأفعال العربية',
   description: 'تعلم تصريف الأفعال العربية في الماضي والمضارع والأمر',
 }
 
