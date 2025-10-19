@@ -1,18 +1,18 @@
-import React from 'react';
-import { Select, MenuItem, FormControl, InputLabel, SelectChangeEvent } from '@mui/material';
+import React from 'react'
+import { Select, MenuItem, FormControl, InputLabel, SelectChangeEvent } from '@mui/material'
 
 interface MuiSelectOption {
-  value: string | number;
-  label?: string;
+  value: string | number
+  label?: string
 }
 
 interface MuiSelectProps {
-  label?: string;
-  value: string | number;
-  onChange: (value: string | number) => void;
-  options: MuiSelectOption[];
-  labelId?: string;
-  className?: string;
+  label?: string
+  value: string | number
+  onChange: (value: string | number) => void
+  options: MuiSelectOption[]
+  labelId?: string
+  className?: string
 }
 
 export const MuiSelect: React.FC<MuiSelectProps> = ({
@@ -24,10 +24,10 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
   className,
 }) => {
   const handleChange = (e: SelectChangeEvent<string | number>) => {
-    onChange(e.target.value);
-  };
+    onChange(e.target.value)
+  }
 
-  const generatedLabelId = labelId || `select-${label?.replace(/\s+/g, '-').toLowerCase()}`;
+  const generatedLabelId = labelId || `select-${label?.replace(/\s+/g, '-').toLowerCase()}`
 
   return (
     <FormControl className={className}>
@@ -100,5 +100,5 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
         ))}
       </Select>
     </FormControl>
-  );
-};
+  )
+}
