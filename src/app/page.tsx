@@ -1,17 +1,10 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './page.module.css';
 import packageJson from '../../package.json';
 import { MuiSelect } from '@/components/ui/mui-select';
-
-interface VerbRow {
-  tense: string;
-  cem: string;
-  tesniye: string;
-  ferd: string;
-  person: string;
-}
+import { useVerbData } from '@/hooks/use-verb-data';
 
 const verbForms = [
   { id: 'salim', name: 'سَالِمٌ', verbs: ['كَتَبَ', 'دَخَلَ'] },
@@ -49,9 +42,10 @@ export default function Home() {
   const [selectedVerbForm, setSelectedVerbForm] = useState<string>(verbForms[0].id);
   const [selectedTense, setSelectedTense] = useState<string>(tenses[0].id);
   const [selectedVerbIndex, setSelectedVerbIndex] = useState<number>(0);
-  const [verbData, setVerbData] = useState<VerbRow[]>([]);
-  const [loading, setLoading] = useState(false);
   const [isHydrated, setIsHydrated] = useState(false);
+
+  // Use react-query to fetch and cache verb data indefinitely
+  const { data: verbData = [], isLoading } = useVerbData(selectedVerbForm, selectedVerbIndex);
 
   // Load saved selections from localStorage after hydration
   useEffect(() => {
@@ -68,42 +62,6 @@ export default function Home() {
       console.error('Error loading saved selections:', error);
     }
   }, []);
-
-  const loadVerbData = useCallback(async (skipLoading = false) => {
-    if (!skipLoading) {
-      setLoading(true);
-    }
-    try {
-      const basePath = process.env.NODE_ENV === 'production' ? '/arabic-verbs' : '';
-      const response = await fetch(`${basePath}/verbs/${selectedVerbForm}-${selectedVerbIndex}.csv`);
-      const text = await response.text();
-      const lines = text.trim().split('\n');
-
-      const data = lines.slice(1).map(line => {
-        const values = line.split(',');
-        return {
-          tense: values[0] || '',
-          cem: values[1] || '',
-          tesniye: values[2] || '',
-          ferd: values[3] || '',
-          person: values[4] || '',
-        };
-      });
-
-      setVerbData(data);
-    } catch (error) {
-      console.error('Error loading verb data:', error);
-      setVerbData([]);
-    }
-    if (!skipLoading) {
-      setLoading(false);
-    }
-  }, [selectedVerbIndex, selectedVerbForm]);
-
-  // Load verb data when dependencies change
-  useEffect(() => {
-    loadVerbData();
-  }, [loadVerbData]);
 
   // Save selections to localStorage when they change (only after hydration)
   useEffect(() => {
@@ -224,7 +182,7 @@ export default function Home() {
         </div>
 
         <div className={styles.tableContainer}>
-          {loading ? (
+          {isLoading ? (
             <div className={styles.loading}>جَارٍ التَّحْمِيلُ...</div>
           ) : (
             renderTable()

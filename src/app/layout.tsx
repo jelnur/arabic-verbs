@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Scheherazade_New } from "next/font/google";
 import "./globals.css";
+import { QueryProvider } from '@/lib/query-provider';
 
 const scheherazade = Scheherazade_New({
   weight: ['400', '700'],
@@ -24,7 +25,9 @@ export default function RootLayout({
       <body
         className={`${scheherazade.variable} font-sans`}
       >
-        {children}
+        <QueryProvider>
+          {children}
+        </QueryProvider>
       </body>
     </html>
   );
