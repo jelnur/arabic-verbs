@@ -1,5 +1,5 @@
+import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material'
 import React from 'react'
-import { Select, MenuItem, FormControl, InputLabel, SelectChangeEvent } from '@mui/material'
 
 interface MuiSelectOption {
   value: string | number

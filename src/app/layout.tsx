@@ -1,7 +1,9 @@
-import type { Metadata } from 'next'
 import { Scheherazade_New } from 'next/font/google'
-import './globals.css'
+
 import { QueryProvider } from '@/lib/query-provider'
+
+import type { Metadata } from 'next'
+import './globals.css'
 
 const scheherazade = Scheherazade_New({
   weight: ['400', '700'],

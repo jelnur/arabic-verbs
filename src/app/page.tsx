@@ -1,10 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import styles from './page.module.css'
-import packageJson from '../../package.json'
+import { useEffect, useState } from 'react'
+
 import { MuiSelect } from '@/components/ui/mui-select'
 import { useVerbData } from '@/hooks/use-verb-data'
+
+import styles from './page.module.css'
+import packageJson from '../../package.json'
 
 const verbForms = [
   { id: 'salim', name: 'سَالِمٌ', verbs: ['كَتَبَ', 'دَخَلَ'] },

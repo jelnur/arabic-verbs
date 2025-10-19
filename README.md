@@ -2,9 +2,7 @@
 
 A static website for learning Arabic verb conjugations (تعلم تصريف الأفعال العربية).
 
-## Live Demo
-
-https://jelnur.github.io/arabic-verbs/
+[LIVE](https://jelnur.github.io/arabic-verbs/)
 
 ## Features
 
@@ -21,11 +19,31 @@ https://jelnur.github.io/arabic-verbs/
 ## Development
 
 ```bash
-yarn         # Install dependencies
-yarn dev     # Run development server
+yarn           # Install dependencies
+yarn dev       # Run development server
+yarn format    # Format code with Prettier
+yarn lint      # Lint code with ESLint
+yarn lint:fix  # Fix linting issues automatically
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Code Quality
+
+This project uses automated code quality tools:
+
+- **Prettier**: Auto-formats code and organizes imports
+- **ESLint**: Lints TypeScript/JavaScript code with auto-fix
+- **Husky**: Git hooks for pre-commit checks
+- **lint-staged**: Runs formatters/linters only on staged files
+
+When you commit changes, Husky will automatically:
+
+1. Format your code with Prettier (including import organization)
+2. Fix linting issues with ESLint
+3. Only process files you're committing (via lint-staged)
+
+If there are issues that can't be auto-fixed, the commit will be blocked until you fix them manually.
 
 ## Deployment
 
