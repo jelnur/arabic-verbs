@@ -67,10 +67,11 @@ To add new verbs or verb forms:
 
 ## Technologies
 
-- Next.js 15.5.6
-- React 19.1.0
-- TypeScript
-- CSS Modules
+- Next.js 15
+- React 19
+- TypeScript 5
+- MUI 7
+- TanStack Query 5
 - Google Fonts (Cheherazade New, Amir)
 
 ## License
