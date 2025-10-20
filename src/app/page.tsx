@@ -19,9 +19,9 @@ const tenses = [
   { id: 'mazi', name: 'المَاضِي' },
   { id: 'muzari', name: 'المُضَارِعُ' },
   { id: 'amr', name: 'الأَمْرُ' },
-  { id: 'mustaqbal-qarib', name: 'المُسْتَقْبَلُ القَرِيبُ', divider: true },
+  { id: 'mustaqbal-qarib', name: 'المُسْتَقْبَلُ القَرِيبُ', hasDividerBefore: true },
   { id: 'mustaqbal-baeed', name: 'المُسْتَقْبَلُ البَعِيدُ' },
-  { id: 'mustaqbal-manfi', name: 'المُسْتَقْبَلُ المَنْفِي' },
+  { id: 'mustaqbal-manfi', name: 'المُسْتَقْبَلُ المَنْفِي', isNegative: true },
 ]
 
 const personLabels: { [key: string]: string } = {
@@ -227,7 +227,8 @@ export default function Home() {
               options={tenses.map((tense) => ({
                 value: tense.id,
                 label: tense.name,
-                divider: tense.divider,
+                hasDividerBefore: tense.hasDividerBefore,
+                isNegative: tense.isNegative,
               }))}
               className={styles.formControl}
             />

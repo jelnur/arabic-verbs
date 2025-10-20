@@ -11,7 +11,8 @@ import React from 'react'
 interface MuiSelectOption {
   value: string | number
   label?: string
-  divider?: boolean
+  hasDividerBefore?: boolean
+  isNegative?: boolean
 }
 
 interface MuiSelectProps {
@@ -37,6 +38,10 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
 
   const generatedLabelId = labelId || `select-${label?.replace(/\s+/g, '-').toLowerCase()}`
 
+  // Find the selected option to get its color
+  const selectedOption = options.find((opt) => opt.value === value)
+  const selectedColor = selectedOption?.isNegative ? '#dc3545' : '#2c3e50'
+
   return (
     <FormControl className={className}>
       <InputLabel
@@ -59,7 +64,7 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
         size="small"
         sx={{
           backgroundColor: 'white',
-          color: '#2c3e50',
+          color: selectedColor,
           fontSize: '1.5rem',
           minWidth: '180px',
           direction: 'rtl',
@@ -69,11 +74,11 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
             borderWidth: '2px',
           },
           '&:hover .MuiOutlinedInput-notchedOutline': {
-            borderColor: '#4a90e2',
+            borderColor: '#dee2e6',
           },
           '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-            borderColor: '#4a90e2',
-            boxShadow: '0 0 0 3px rgba(74, 144, 226, 0.1)',
+            borderColor: '#dee2e6',
+            boxShadow: 'none',
           },
           borderRadius: '8px',
         }}
@@ -83,7 +88,6 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
               backgroundColor: 'white',
               '& .MuiMenuItem-root': {
                 fontSize: '1.5rem',
-                color: '#2c3e50',
                 direction: 'rtl',
                 justifyContent: 'center',
                 padding: '12px',
@@ -103,11 +107,17 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
       >
         {options.map((option) => {
           const items = []
-          if (option.divider) {
+          if (option.hasDividerBefore) {
             items.push(<Divider key={`divider-${option.value}`} sx={{ margin: '4px 0' }} />)
           }
           items.push(
-            <MenuItem key={option.value} value={option.value}>
+            <MenuItem
+              key={option.value}
+              value={option.value}
+              sx={{
+                color: option.isNegative ? '#dc3545' : '#2c3e50',
+              }}
+            >
               {option.label}
             </MenuItem>
           )
