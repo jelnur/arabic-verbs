@@ -20,6 +20,7 @@ const tenses = [
   { id: 'mazi-manfi-ma', name: 'المَاضِي المَنْفِي بِمَا', isNegative: true },
   { id: 'mazi-manfi-lam', name: 'المَاضِي المَنْفِي بِلَمْ', isNegative: true },
   { id: 'muzari', name: 'المُضَارِعُ', hasDividerBefore: true },
+  { id: 'muzari-manfi', name: 'المُضَارِعُ المَنْفِي', isNegative: true },
   { id: 'amr', name: 'الأَمْرُ', hasDividerBefore: true },
   { id: 'amr-manfi', name: 'الأَمْرُ المَنْفِي', isNegative: true },
   { id: 'mustaqbal-qarib', name: 'المُسْتَقْبَلُ القَرِيبُ', hasDividerBefore: true },
