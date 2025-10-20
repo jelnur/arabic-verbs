@@ -1,9 +1,17 @@
-import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material'
+import {
+  Divider,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  SelectChangeEvent,
+} from '@mui/material'
 import React from 'react'
 
 interface MuiSelectOption {
   value: string | number
   label?: string
+  divider?: boolean
 }
 
 interface MuiSelectProps {
@@ -93,11 +101,18 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
           },
         }}
       >
-        {options.map((option) => (
-          <MenuItem key={option.value} value={option.value}>
-            {option.label}
-          </MenuItem>
-        ))}
+        {options.map((option) => {
+          const items = []
+          if (option.divider) {
+            items.push(<Divider key={`divider-${option.value}`} sx={{ margin: '4px 0' }} />)
+          }
+          items.push(
+            <MenuItem key={option.value} value={option.value}>
+              {option.label}
+            </MenuItem>
+          )
+          return items
+        })}
       </Select>
     </FormControl>
   )

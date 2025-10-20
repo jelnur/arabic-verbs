@@ -18,6 +18,8 @@ const tenses = [
   { id: 'mazi', name: 'المَاضِي' },
   { id: 'muzari', name: 'المُضَارِعُ' },
   { id: 'amr', name: 'الأَمْرُ' },
+  { id: 'mustaqbal-qarib', name: 'المُسْتَقْبَلُ القَرِيبُ', divider: true },
+  { id: 'mustaqbal-baeed', name: 'المُسْتَقْبَلُ البَعِيدُ' },
 ]
 
 const personLabels: { [key: string]: string } = {
@@ -185,6 +187,7 @@ export default function Home() {
               options={tenses.map((tense) => ({
                 value: tense.id,
                 label: tense.name,
+                divider: tense.divider,
               }))}
               className={styles.formControl}
             />
