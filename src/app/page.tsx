@@ -1,5 +1,6 @@
 'use client'
 
+import { Checkbox, FormControlLabel } from '@mui/material'
 import { useEffect, useState } from 'react'
 
 import { MuiSelect } from '@/components/ui/mui-select'
@@ -20,6 +21,7 @@ const tenses = [
   { id: 'amr', name: 'الأَمْرُ' },
   { id: 'mustaqbal-qarib', name: 'المُسْتَقْبَلُ القَرِيبُ', divider: true },
   { id: 'mustaqbal-baeed', name: 'المُسْتَقْبَلُ البَعِيدُ' },
+  { id: 'mustaqbal-manfi', name: 'المُسْتَقْبَلُ المَنْفِي' },
 ]
 
 const personLabels: { [key: string]: string } = {
@@ -36,16 +38,29 @@ const personOrder = Object.keys(personLabels)
 
 const STORAGE_KEY = 'arabicVerbsSelections'
 
+// Person pronouns for each conjugation
+const personPronouns: { [key: string]: string[] } = {
+  '1': ['أَنَا', 'نَحْنُ'],
+  '2-muzekker': ['أَنْتَ', 'أَنْتُمَا', 'أَنْتُمْ'],
+  '2-muennes': ['أَنْتِ', 'أَنْتُمَا', 'أَنْتُنَّ'],
+  '2-muzekker-modern': ['أَنْتَ', 'أَنْتُمَا', 'أَنْتُمْ'],
+  '2-muennes-modern': ['أَنْتِ', 'أَنْتُمَا', 'أَنْتُنَّ'],
+  '3-muzekker': ['هُوَ', 'هُمَا', 'هُمْ'],
+  '3-muennes': ['هِيَ', 'هُمَا', 'هُنَّ'],
+}
+
 interface StoredSelections {
   verbForm: string
   verbIndex: number
   tense: string
+  showPronouns: boolean
 }
 
 export default function Home() {
   const [selectedVerbForm, setSelectedVerbForm] = useState<string>(verbForms[0].id)
   const [selectedTense, setSelectedTense] = useState<string>(tenses[0].id)
   const [selectedVerbIndex, setSelectedVerbIndex] = useState<number>(0)
+  const [showPronouns, setShowPronouns] = useState<boolean>(false)
   const [isHydrated, setIsHydrated] = useState(false)
 
   // Use react-query to fetch and cache verb data indefinitely
@@ -57,10 +72,16 @@ export default function Home() {
     try {
       const saved = localStorage.getItem(STORAGE_KEY)
       if (saved) {
-        const { verbForm, verbIndex, tense } = JSON.parse(saved) as StoredSelections
+        const {
+          verbForm,
+          verbIndex,
+          tense,
+          showPronouns: savedShowPronouns,
+        } = JSON.parse(saved) as StoredSelections
         if (verbForm) setSelectedVerbForm(verbForm)
         if (typeof verbIndex === 'number') setSelectedVerbIndex(verbIndex)
         if (tense) setSelectedTense(tense)
+        if (typeof savedShowPronouns === 'boolean') setShowPronouns(savedShowPronouns)
       }
     } catch (error) {
       console.error('Error loading saved selections:', error)
@@ -75,9 +96,10 @@ export default function Home() {
       verbForm: selectedVerbForm,
       verbIndex: selectedVerbIndex,
       tense: selectedTense,
+      showPronouns,
     }
     localStorage.setItem(STORAGE_KEY, JSON.stringify(selections))
-  }, [selectedVerbForm, selectedVerbIndex, selectedTense, isHydrated])
+  }, [selectedVerbForm, selectedVerbIndex, selectedTense, showPronouns, isHydrated])
 
   const renderTable = () => {
     // Filter data by selected tense
@@ -112,15 +134,33 @@ export default function Home() {
                 <td className={isFirstInSection ? styles.sectionStart : ''}>
                   {personLabels[person]}
                 </td>
-                <td>{row.ferd}</td>
+                <td>
+                  {showPronouns && personPronouns[person]?.[0] && (
+                    <span className={styles.pronoun}>{personPronouns[person][0]} </span>
+                  )}
+                  {row.ferd}
+                </td>
                 {person === '1' ? (
                   <td colSpan={2} className={styles.combinedCell}>
+                    {showPronouns && personPronouns[person]?.[1] && (
+                      <span className={styles.pronoun}>{personPronouns[person][1]} </span>
+                    )}
                     {row.tesniye || row.cem}
                   </td>
                 ) : (
                   <>
-                    <td>{row.tesniye}</td>
-                    <td>{row.cem}</td>
+                    <td>
+                      {showPronouns && personPronouns[person]?.[1] && (
+                        <span className={styles.pronoun}>{personPronouns[person][1]} </span>
+                      )}
+                      {row.tesniye}
+                    </td>
+                    <td>
+                      {showPronouns && personPronouns[person]?.[2] && (
+                        <span className={styles.pronoun}>{personPronouns[person][2]} </span>
+                      )}
+                      {row.cem}
+                    </td>
                   </>
                 )}
               </tr>
@@ -192,6 +232,27 @@ export default function Home() {
               className={styles.formControl}
             />
           </div>
+        </div>
+
+        <div className={styles.checkboxContainer}>
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={showPronouns}
+                onChange={(e) => setShowPronouns(e.target.checked)}
+                sx={{
+                  color: '#4a90e2',
+                  '&.Mui-checked': {
+                    color: '#4a90e2',
+                  },
+                }}
+              />
+            }
+            label={<span className={styles.checkboxLabel}>أَظْهِرِ الضَّمَائِرَ</span>}
+            sx={{
+              direction: 'rtl',
+            }}
+          />
         </div>
 
         <div className={styles.tableContainer}>
