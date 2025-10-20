@@ -17,7 +17,7 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #2c3e50;
   margin: 0;
@@ -64,7 +64,7 @@
 }
 
 .checkboxLabel {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: #495057;
 }
 
@@ -85,7 +85,7 @@
 
 .select {
   padding: 0.75rem 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   border: 2px solid #dee2e6;
   border-radius: 8px;
   background: white;
@@ -140,7 +140,7 @@
   background: #4a90e2;
   color: white;
   padding: 1.25rem;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 600;
   text-align: center;
   border: 1px solid #3a7bc8;
@@ -148,7 +148,7 @@
 
 .verbTable td {
   padding: 1.25rem;
-  font-size: 1.75rem;
+  font-size: 2rem;
   text-align: center;
   border: 1px solid #dee2e6;
   color: #2c3e50;
@@ -240,7 +240,7 @@
 /* Make person label cells bold */
 .verbTable tbody tr td:first-child {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   max-width: 320px;
   width: 320px;
   white-space: wrap;
@@ -263,7 +263,7 @@
 }
 
 .loading {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: #6c757d;
   padding: 2rem;
   text-align: center;
@@ -281,26 +281,26 @@
   }
 
   .checkboxLabel {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   /* Make verb cells (not labels) have bigger font on mobile */
   .verbTable th {
     padding: 0.75rem 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .verbTable td {
     padding: 0.75rem 0.5rem;
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   .personLabel {
-    font-size: 1rem !important;
+    font-size: 1.25rem !important;
   }
 
   .select,
   .verbDisplay {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }

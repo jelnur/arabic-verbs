@@ -47,7 +47,7 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
       <InputLabel
         id={generatedLabelId}
         sx={{
-          fontSize: '1.25rem',
+          fontSize: '1.5rem',
           fontWeight: 500,
           color: '#495057',
           direction: 'rtl',
@@ -65,7 +65,7 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
         sx={{
           backgroundColor: 'white',
           color: selectedColor,
-          fontSize: '1.5rem',
+          fontSize: '1.75rem',
           minWidth: '180px',
           direction: 'rtl',
           textAlign: 'center',
@@ -86,8 +86,9 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
           PaperProps: {
             sx: {
               backgroundColor: 'white',
+              colorScheme: 'light',
               '& .MuiMenuItem-root': {
-                fontSize: '1.5rem',
+                fontSize: '1.75rem',
                 direction: 'rtl',
                 justifyContent: 'center',
                 padding: '12px',
@@ -99,6 +100,23 @@ export const MuiSelect: React.FC<MuiSelectProps> = ({
                   '&:hover': {
                     backgroundColor: '#d0e8ff',
                   },
+                },
+              },
+              '& .MuiList-root': {
+                backgroundColor: 'white',
+              },
+              // Force light scrollbar on all browsers
+              '&::-webkit-scrollbar': {
+                width: '8px',
+              },
+              '&::-webkit-scrollbar-track': {
+                backgroundColor: 'white',
+              },
+              '&::-webkit-scrollbar-thumb': {
+                backgroundColor: '#c0c0c0',
+                borderRadius: '4px',
+                '&:hover': {
+                  backgroundColor: '#a0a0a0',
                 },
               },
             },
