@@ -17,7 +17,9 @@ const verbForms = [
 
 const tenses = [
   { id: 'mazi', name: 'المَاضِي' },
-  { id: 'muzari', name: 'المُضَارِعُ' },
+  { id: 'mazi-manfi-ma', name: 'المَاضِي المَنْفِي بِمَا', isNegative: true },
+  { id: 'mazi-manfi-lam', name: 'المَاضِي المَنْفِي بِلَمْ', isNegative: true },
+  { id: 'muzari', name: 'المُضَارِعُ', hasDividerBefore: true },
   { id: 'amr', name: 'الأَمْرُ' },
   { id: 'mustaqbal-qarib', name: 'المُسْتَقْبَلُ القَرِيبُ', hasDividerBefore: true },
   { id: 'mustaqbal-baeed', name: 'المُسْتَقْبَلُ البَعِيدُ' },
