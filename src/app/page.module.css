@@ -257,10 +257,10 @@
 }
 
 /* Bolder border between shexs (person) and mufred (singular) columns */
-.verbTable td:nth-child(2),
+/* .verbTable td:nth-child(2),
 .verbTable th:nth-child(2) {
   border-right: 3px solid #adb5bd;
-}
+} */
 
 .loading {
   font-size: 1.75rem;

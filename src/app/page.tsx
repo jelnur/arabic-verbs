@@ -113,7 +113,7 @@ export default function Home() {
       <table className={styles.verbTable}>
         <thead>
           <tr>
-            <th>شَخْصٌ</th>
+            {!showPronouns && <th>شَخْصٌ</th>}
             <th>مُفْرَدٌ</th>
             <th>تَثْنِيَةٌ</th>
             <th>جَمْعٌ</th>
@@ -135,9 +135,11 @@ export default function Home() {
                 data-person={personNumber}
                 className={isFirstInSection ? styles.sectionStart : ''}
               >
-                <td className={isFirstInSection ? styles.sectionStart : ''}>
-                  {personLabels[person]}
-                </td>
+                {!showPronouns && (
+                  <td className={isFirstInSection ? styles.sectionStart : ''}>
+                    {personLabels[person]}
+                  </td>
+                )}
                 <td>
                   {showPronouns && personPronouns[person]?.[0] && (
                     <span className={styles.pronoun}>{personPronouns[person][0]} </span>
