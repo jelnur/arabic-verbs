@@ -270,6 +270,10 @@
   direction: rtl;
 }
 
+.affixRed {
+  color: #e03131;
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 1.75rem;

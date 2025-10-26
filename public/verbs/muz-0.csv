@@ -1,52 +1,52 @@
 tense,cem,tesniye,ferd,person
-mazi,أَخَذْنَا,,أَخَذْتُ,1
+mazi,أَخَذْنَا,,أَخَذْتُ,1-mutekellim
 mazi,أَخَذْتُمْ,أَخَذْتُمَا,أَخَذْتَ,2-muzekker
 mazi,أَخَذْتُنَّ,أَخَذْتُمَا,أَخَذْتِ,2-muennes
 mazi,أَخَذُوا,أَخَذَا,أَخَذَ,3-muzekker
 mazi,أَخَذْنَ,أَخَذَتَا,أَخَذَتْ,3-muennes
-mazi-manfi-ma,مَا أَخَذْنَا,,مَا أَخَذْتُ,1
+mazi-manfi-ma,مَا أَخَذْنَا,,مَا أَخَذْتُ,1-mutekellim
 mazi-manfi-ma,مَا أَخَذْتُمْ,مَا أَخَذْتُمَا,مَا أَخَذْتَ,2-muzekker
 mazi-manfi-ma,مَا أَخَذْتُنَّ,مَا أَخَذْتُمَا,مَا أَخَذْتِ,2-muennes
 mazi-manfi-ma,مَا أَخَذُوا,مَا أَخَذَا,مَا أَخَذَ,3-muzekker
 mazi-manfi-ma,مَا أَخَذْنَ,مَا أَخَذَتَا,مَا أَخَذَتْ,3-muennes
-mazi-manfi-lam,لَمْ نَأْخُذْ,,لَمْ أَخُذْ,1
+mazi-manfi-lam,لَمْ نَأْخُذْ,,لَمْ أَخُذْ,1-mutekellim
 mazi-manfi-lam,لَمْ تَأْخُذُوا,لَمْ تَأْخُذَا,لَمْ تَأْخُذْ,2-muzekker
 mazi-manfi-lam,لَمْ تَأْخُذْنَ,لَمْ تَأْخُذَا,لَمْ تَأْخُذِي,2-muennes
 mazi-manfi-lam,لَمْ يَأْخُذُوا,لَمْ يَأْخُذَا,لَمْ يَأْخُذْ,3-muzekker
 mazi-manfi-lam,لَمْ يَأْخُذْنَ,لَمْ تَأْخُذَا,لَمْ تَأْخُذْ,3-muennes
-muzari,نَأْخُذُ,,أَخُذُ,1
+muzari,نَأْخُذُ,,أَخُذُ,1-mutekellim
 muzari,تَأْخُذُونَ,تَأْخُذَانِ,تَأْخُذُ,2-muzekker
 muzari,تَأْخُذْنَ,تَأْخُذَانِ,تَأْخُذِينَ,2-muennes
 muzari,يَأْخُذُونَ,يَأْخُذَانِ,يَأْخُذُ,3-muzekker
 muzari,يَأْخُذْنَ,تَأْخُذَانِ,تَأْخُذُ,3-muennes
-muzari-manfi,لَا نَأْخُذُ,,لَا أَخُذُ,1
+muzari-manfi,لَا نَأْخُذُ,,لَا أَخُذُ,1-mutekellim
 muzari-manfi,لَا تَأْخُذُونَ,لَا تَأْخُذَانِ,لَا تَأْخُذُ,2-muzekker
 muzari-manfi,لَا تَأْخُذْنَ,لَا تَأْخُذَانِ,لَا تَأْخُذِينَ,2-muennes
 muzari-manfi,لَا يَأْخُذُونَ,لَا يَأْخُذَانِ,لَا يَأْخُذُ,3-muzekker
 muzari-manfi,لَا يَأْخُذْنَ,لَا تَأْخُذَانِ,لَا تَأْخُذُ,3-muennes
-amr,لِنَأْخُذْ,,لِأَخُذْ,1
+amr,لِنَأْخُذْ,,لِأَخُذْ,1-mutekellim
 amr,لِتَأْخُذُوا,لِتَأْخُذَا,لِتَأْخُذْ,2-muzekker
 amr,لِتَأْخُذْنَ,ِلِتَأْخُذَا,لِتَأْخُذِي,2-muennes
 amr,خُذُو,خُذَا,خُذْ,2-muzekker-hadis
 amr,خُذْنَ,خُذَا,خُذِي,2-muennes-hadis
 amr,لِيَأْخُذُوا,لِيَأْخُذَا,لِيَأْخُذْ,3-muzekker
 amr,لِيَأْخُذْنَ,لِتَأْخُذَا,لِتَأْخُذْ,3-muennes
-amr-manfi,لَا نَأْخُذْ,,لَا أَخُذْ,1
+amr-manfi,لَا نَأْخُذْ,,لَا أَخُذْ,1-mutekellim
 amr-manfi,لَا تَأْخُذُوا,لَا تَأْخُذَا,لَا تَأْخُذْ,2-muzekker
 amr-manfi,لَا تَأْخُذْنَ,لَا تَأْخُذَا,لَا تَأْخُذِي,2-muennes
 amr-manfi,لَا يَأْخُذُوا,لَا يَأْخُذَا,لَا يَأْخُذْ,3-muzekker
 amr-manfi,لَا يَأْخُذْنَ,لَا تَأْخُذَا,لَا تَأْخُذْ,3-muennes
-mustaqbal-qarib,سَنَأْخُذُ,,سَأَخُذُ,1
+mustaqbal-qarib,سَنَأْخُذُ,,سَأَخُذُ,1-mutekellim
 mustaqbal-qarib,سَتَأْخُذُونَ,سَتَأْخُذَانِ,سَتَأْخُذُ,2-muzekker
 mustaqbal-qarib,سَتَأْخُذْنَ,سَتَأْخُذَانِ,سَتَأْخُذِينَ,2-muennes
 mustaqbal-qarib,سَيَأْخُذُونَ,سَيَأْخُذَانِ,سَيَأْخُذُ,3-muzekker
 mustaqbal-qarib,سَيَأْخُذْنَ,سَتَأْخُذَانِ,سَتَأْخُذُ,3-muennes
-mustaqbal-baeed,سَوْفَ نَأْخُذُ,,سَوْفَ أَخُذُ,1
+mustaqbal-baeed,سَوْفَ نَأْخُذُ,,سَوْفَ أَخُذُ,1-mutekellim
 mustaqbal-baeed,سَوْفَ تَأْخُذُونَ,سَوْفَ تَأْخُذَانِ,سَوْفَ تَأْخُذُ,2-muzekker
 mustaqbal-baeed,سَوْفَ تَأْخُذْنَ,سَوْفَ تَأْخُذَانِ,سَوْفَ تَأْخُذِينَ,2-muennes
 mustaqbal-baeed,سَوْفَ يَأْخُذُونَ,سَوْفَ يَأْخُذَانِ,سَوْفَ يَأْخُذُ,3-muzekker
 mustaqbal-baeed,سَوْفَ يَأْخُذْنَ,سَوْفَ تَأْخُذَانِ,سَوْفَ تَأْخُذُ,3-muennes
-mustaqbal-manfi,لَنْ نَأْخُذَ,,لَنْ أَخُذَ,1
+mustaqbal-manfi,لَنْ نَأْخُذَ,,لَنْ أَخُذَ,1-mutekellim
 mustaqbal-manfi,لَنْ تَأْخُذُوا,لَنْ تَأْخُذَا,لَنْ تَأْخُذَ,2-muzekker
 mustaqbal-manfi,لَنْ تَأْخُذْنَ,لَنْ تَأْخُذَا,لَنْ تَأْخُذِي,2-muennes
 mustaqbal-manfi,لَنْ يَأْخُذُوا,لَنْ يَأْخُذَا,لَنْ يَأْخُذَ,3-muzekker

@@ -1,52 +1,52 @@
 tense,cem,tesniye,ferd,person
-mazi,كَتَبْنَا,,كَتَبْتُ,1
+mazi,كَتَبْنَا,,كَتَبْتُ,1-mutekellim
 mazi,كَتَبْتُمْ,كَتَبْتُمَا,كَتَبْتَ,2-muzekker
 mazi,كَتَبْتُنَّ,كَتَبْتُمَا,كَتَبْتِ,2-muennes
 mazi,كَتَبُوا,كَتَبَا,كَتَبَ,3-muzekker
 mazi,كَتَبْنَ,كَتَبَتَا,كَتَبَتْ,3-muennes
-mazi-manfi-ma,مَا كَتَبْنَا,,مَا كَتَبْتُ,1
+mazi-manfi-ma,مَا كَتَبْنَا,,مَا كَتَبْتُ,1-mutekellim
 mazi-manfi-ma,مَا كَتَبْتُمْ,مَا كَتَبْتُمَا,مَا كَتَبْتَ,2-muzekker
 mazi-manfi-ma,مَا كَتَبْتُنَّ,مَا كَتَبْتُمَا,مَا كَتَبْتِ,2-muennes
 mazi-manfi-ma,مَا كَتَبُوا,مَا كَتَبَا,مَا كَتَبَ,3-muzekker
 mazi-manfi-ma,مَا كَتَبْنَ,مَا كَتَبَتَا,مَا كَتَبَتْ,3-muennes
-mazi-manfi-lam,لَمْ نَكْتُبْ,,لَمْ أَكْتُبْ,1
+mazi-manfi-lam,لَمْ نَكْتُبْ,,لَمْ أَكْتُبْ,1-mutekellim
 mazi-manfi-lam,لَمْ تَكْتُبُوا,لَمْ تَكْتُبَا,لَمْ تَكْتُبْ,2-muzekker
 mazi-manfi-lam,لَمْ تَكْتُبْنَ,لَمْ تَكْتُبَا,لَمْ تَكْتُبِي,2-muennes
 mazi-manfi-lam,لَمْ يَكْتُبُوا,لَمْ يَكْتُبَا,لَمْ يَكْتُبْ,3-muzekker
 mazi-manfi-lam,لَمْ يَكْتُبْنَ,لَمْ تَكْتُبَا,لَمْ تَكْتُبْ,3-muennes
-muzari,نَكْتُبُ,,أَكْتُبُ,1
+muzari,نَكْتُبُ,,أَكْتُبُ,1-mutekellim
 muzari,تَكْتُبُونَ,تَكْتُبَانِ,تَكْتُبُ,2-muzekker
 muzari,تَكْتُبْنَ,تَكْتُبَانِ,تَكْتُبِينَ,2-muennes
 muzari,يَكْتُبُونَ,يَكْتُبَانِ,يَكْتُبُ,3-muzekker
 muzari,يَكْتُبْنَ,تَكْتُبَانِ,تَكْتُبُ,3-muennes
-muzari-manfi,لَا نَكْتُبُ,,لَا أَكْتُبُ,1
+muzari-manfi,لَا نَكْتُبُ,,لَا أَكْتُبُ,1-mutekellim
 muzari-manfi,لَا تَكْتُبُونَ,لَا تَكْتُبَانِ,لَا تَكْتُبُ,2-muzekker
 muzari-manfi,لَا تَكْتُبْنَ,لَا تَكْتُبَانِ,لَا تَكْتُبِينَ,2-muennes
 muzari-manfi,لَا يَكْتُبُونَ,لَا يَكْتُبَانِ,لَا يَكْتُبُ,3-muzekker
 muzari-manfi,لَا يَكْتُبْنَ,لَا تَكْتُبَانِ,لَا تَكْتُبُ,3-muennes
-amr,لِنَكْتُبْ,,لِاَكْتُبْ,1
+amr,لِنَكْتُبْ,,لِاَكْتُبْ,1-mutekellim
 amr,لِتَكْتُبُوا,لِتَكْتُبَا,لِتَكْتُبْ,2-muzekker
 amr,لِتَكْتُبْنَ,لِتَكْتُبَا,لِتَكْتُبِي,2-muennes
 amr,اُكْتُبُو,اُكْتُبَا,اُكْتُبْ,2-muzekker-hadis
 amr,اُكْتُبْنَ,اُكْتُبَا,اُكْتُبِي,2-muennes-hadis
 amr,لِيَكْتُبُوا,لِيَكْتُبَا,لِيَكْتُبْ,3-muzekker
 amr,لِيَكْتُبْنَ,لِتَكْتُبَا,لِتَكْتُبْ,3-muennes
-amr-manfi,لَا نَكْتُبْ,,لَا أَكْتُبْ,1
+amr-manfi,لَا نَكْتُبْ,,لَا أَكْتُبْ,1-mutekellim
 amr-manfi,لَا تَكْتُبُوا,لَا تَكْتُبَا,لَا تَكْتُبْ,2-muzekker
 amr-manfi,لَا تَكْتُبْنَ,لَا تَكْتُبَا,لَا تَكْتُبِي,2-muennes
 amr-manfi,لَا يَكْتُبُوا,لَا يَكْتُبَا,لَا يَكْتُبْ,3-muzekker
 amr-manfi,لَا يَكْتُبْنَ,لَا تَكْتُبَا,لَا تَكْتُبْ,3-muennes
-mustaqbal-qarib,سَنَكْتُبُ,,سَأَكْتُبُ,1
+mustaqbal-qarib,سَنَكْتُبُ,,سَأَكْتُبُ,1-mutekellim
 mustaqbal-qarib,سَتَكْتُبُونَ,سَتَكْتُبَانِ,سَتَكْتُبُ,2-muzekker
 mustaqbal-qarib,سَتَكْتُبْنَ,سَتَكْتُبَانِ,سَتَكْتُبِينَ,2-muennes
 mustaqbal-qarib,سَيَكْتُبُونَ,سَيَكْتُبَانِ,سَيَكْتُبُ,3-muzekker
 mustaqbal-qarib,سَيَكْتُبْنَ,سَتَكْتُبَانِ,سَتَكْتُبُ,3-muennes
-mustaqbal-baeed,سَوْفَ نَكْتُبُ,,سَوْفَ أَكْتُبُ,1
+mustaqbal-baeed,سَوْفَ نَكْتُبُ,,سَوْفَ أَكْتُبُ,1-mutekellim
 mustaqbal-baeed,سَوْفَ تَكْتُبُونَ,سَوْفَ تَكْتُبَانِ,سَوْفَ تَكْتُبُ,2-muzekker
 mustaqbal-baeed,سَوْفَ تَكْتُبْنَ,سَوْفَ تَكْتُبَانِ,سَوْفَ تَكْتُبِينَ,2-muennes
 mustaqbal-baeed,سَوْفَ يَكْتُبُونَ,سَوْفَ يَكْتُبَانِ,سَوْفَ يَكْتُبُ,3-muzekker
 mustaqbal-baeed,سَوْفَ يَكْتُبْنَ,سَوْفَ تَكْتُبَانِ,سَوْفَ تَكْتُبُ,3-muennes
-mustaqbal-manfi,لَنْ نَكْتُبَ,,لَنْ أَكْتُبَ,1
+mustaqbal-manfi,لَنْ نَكْتُبَ,,لَنْ أَكْتُبَ,1-mutekellim
 mustaqbal-manfi,لَنْ تَكْتُبُوا,لَنْ تَكْتُبَا,لَنْ تَكْتُبَ,2-muzekker
 mustaqbal-manfi,لَنْ تَكْتُبْنَ,لَنْ تَكْتُبَا,لَنْ تَكْتُبِي,2-muennes
 mustaqbal-manfi,لَنْ يَكْتُبُوا,لَنْ يَكْتُبَا,لَنْ يَكْتُبَ,3-muzekker

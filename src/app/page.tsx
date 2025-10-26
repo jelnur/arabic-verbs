@@ -4,71 +4,39 @@ import { Checkbox, FormControlLabel } from '@mui/material'
 import { useEffect, useState } from 'react'
 
 import { MuiSelect } from '@/components/ui/mui-select'
+import { VERB_KINDS, TENSE_OPTIONS, personOrder, PERSON_OPTIONS, ZAMIRS } from '@/constants/verbs'
+import { useVerbAffixes } from '@/hooks/use-verb-affixes'
 import { useVerbData } from '@/hooks/use-verb-data'
+import { Form, Person, Kind, Tense } from '@/types/verb'
 
 import styles from './page.module.css'
 import packageJson from '../../package.json'
 
-const verbForms = [
-  { id: 'salim', name: 'سَالِمٌ', verbs: ['كَتَبَ', 'دَخَلَ', 'ذَهَبَ'] },
-  { id: 'muz', name: 'مُعْتَلٌّ', verbs: ['اَخَذَ'] },
-  { id: 'mudaaf', name: 'مُضَاعَفٌ', verbs: ['سَدَّ', 'فَرَّ'] },
-]
-
-const tenses = [
-  { id: 'mazi', name: 'المَاضِي' },
-  { id: 'mazi-manfi-ma', name: 'المَاضِي المَنْفِي بِمَا', isNegative: true },
-  { id: 'mazi-manfi-lam', name: 'المَاضِي المَنْفِي بِلَمْ', isNegative: true },
-  { id: 'muzari', name: 'المُضَارِعُ', hasDividerBefore: true },
-  { id: 'muzari-manfi', name: 'المُضَارِعُ المَنْفِي', isNegative: true },
-  { id: 'amr', name: 'الأَمْرُ', hasDividerBefore: true },
-  { id: 'amr-manfi', name: 'الأَمْرُ المَنْفِي', isNegative: true },
-  { id: 'mustaqbal-qarib', name: 'المُسْتَقْبَلُ القَرِيبُ', hasDividerBefore: true },
-  { id: 'mustaqbal-baeed', name: 'المُسْتَقْبَلُ البَعِيدُ' },
-  { id: 'mustaqbal-manfi', name: 'المُسْتَقْبَلُ المَنْفِي', isNegative: true },
-]
-
-const personLabels: { [key: string]: string } = {
-  '1': 'المُتَكَلِّمُ',
-  '2-muzekker': 'المُخَاطَبُ المُذَكَّرُ',
-  '2-muennes': 'المُخَاطَبَةُ المُؤَنَّثَةُ',
-  '2-muzekker-hadis': 'المُخَاطَبُ المُذَكَّرُ (حَدِيثٌ)',
-  '2-muennes-hadis': 'المُخَاطَبَةُ المُؤَنَّثَةُ (حَدِيثٌ)',
-  '3-muzekker': 'الغَائِبُ المُذَكَّرُ',
-  '3-muennes': 'الغَائِبَةُ المُؤَنَّثَةُ',
-}
-
-const personOrder = Object.keys(personLabels)
-
-const STORAGE_KEY = 'arabicVerbsSelections'
-
-// Person pronouns for each conjugation
-const personPronouns: { [key: string]: string[] } = {
-  '1': ['أَنَا', 'نَحْنُ'],
-  '2-muzekker': ['أَنْتَ', 'أَنْتُمَا', 'أَنْتُمْ'],
-  '2-muennes': ['أَنْتِ', 'أَنْتُمَا', 'أَنْتُنَّ'],
-  '2-muzekker-hadis': ['أَنْتَ', 'أَنْتُمَا', 'أَنْتُمْ'],
-  '2-muennes-hadis': ['أَنْتِ', 'أَنْتُمَا', 'أَنْتُنَّ'],
-  '3-muzekker': ['هُوَ', 'هُمَا', 'هُمْ'],
-  '3-muennes': ['هِيَ', 'هُمَا', 'هُنَّ'],
-}
+const STORAGE_KEY = 'selections'
 
 interface StoredSelections {
-  verbForm: string
+  verbKind: string
   verbIndex: number
   tense: string
   showPronouns: boolean
 }
 
 export default function Home() {
-  const [selectedVerbForm, setSelectedVerbForm] = useState<string>(verbForms[0].id)
-  const [selectedTense, setSelectedTense] = useState<string>(tenses[0].id)
+  const [selectedVerbKind, setSelectedVerbKind] = useState<string>(VERB_KINDS[0].id)
+  const [selectedTense, setSelectedTense] = useState<string>(TENSE_OPTIONS[0].id)
   const [selectedVerbIndex, setSelectedVerbIndex] = useState<number>(0)
   const [showPronouns, setShowPronouns] = useState<boolean>(false)
   const [isHydrated, setIsHydrated] = useState(false)
 
-  // Use react-query to fetch and cache verb data indefinitely
-  const { data: verbData = [], isLoading } = useVerbData(selectedVerbForm, selectedVerbIndex)
+  // Use react-query to fetch and cache verb data and affix patterns
+  const { data: verbData = [], isLoading } = useVerbData(
+    selectedVerbKind as Kind,
+    selectedVerbIndex
+  )
+  const { data: affixPatterns = {} } = useVerbAffixes(
+    selectedVerbKind as Kind,
+    selectedTense as Tense
+  )
 
   // Load saved selections from localStorage after hydration
   useEffect(() => {
@@ -77,12 +45,12 @@ export default function Home() {
       const saved = localStorage.getItem(STORAGE_KEY)
       if (saved) {
         const {
-          verbForm,
+          verbKind,
           verbIndex,
           tense,
           showPronouns: savedShowPronouns,
         } = JSON.parse(saved) as StoredSelections
-        if (verbForm) setSelectedVerbForm(verbForm)
+        if (verbKind) setSelectedVerbKind(verbKind)
         if (typeof verbIndex === 'number') setSelectedVerbIndex(verbIndex)
         if (tense) setSelectedTense(tense)
         if (typeof savedShowPronouns === 'boolean') setShowPronouns(savedShowPronouns)
@@ -97,16 +65,49 @@ export default function Home() {
     if (!isHydrated) return
 
     const selections: StoredSelections = {
-      verbForm: selectedVerbForm,
+      verbKind: selectedVerbKind,
       verbIndex: selectedVerbIndex,
       tense: selectedTense,
       showPronouns,
     }
     localStorage.setItem(STORAGE_KEY, JSON.stringify(selections))
-  }, [selectedVerbForm, selectedVerbIndex, selectedTense, showPronouns, isHydrated])
+  }, [selectedVerbKind, selectedVerbIndex, selectedTense, showPronouns, isHydrated])
+
+  const renderWithAffixes = (value: string, person: Person, form: Form) => {
+    if (!value) return value
+
+    const patternKey = `${person}-${form}`
+    const patternStr = affixPatterns[patternKey]
+
+    if (!patternStr) return value
+
+    try {
+      // The pattern should match the entire word and capture the affix in the last group
+      const pattern = new RegExp(patternStr)
+      const match = value.match(pattern)
+
+      if (match && match.length > 1) {
+        // The last group is the affix, everything before it is the stem
+        const affix = match[match.length - 1]
+        const stem = value.slice(0, value.length - affix.length)
+
+        if (affix) {
+          return (
+            <>
+              {stem}
+              <span className={styles.affixRed}>{affix}</span>
+            </>
+          )
+        }
+      }
+    } catch (e) {
+      console.error(`Error processing pattern for ${patternKey}:`, e)
+    }
+
+    return value
+  }
 
   const renderTable = () => {
-    // Filter data by selected tense
     const filteredData = verbData.filter((row) => row.tense === selectedTense)
 
     return (
@@ -128,7 +129,8 @@ export default function Home() {
             if (!row.ferd && !row.tesniye && !row.cem) return null
 
             const personNumber = person.split('-')[0]
-            const isFirstInSection = person.endsWith('muzekker') || person === '1'
+            const isFirstInSection = person.endsWith('muzekker') || person === '1-mutekellim'
+
             return (
               <tr
                 key={person}
@@ -136,34 +138,37 @@ export default function Home() {
                 className={isFirstInSection ? styles.sectionStart : ''}
               >
                 <td style={{ display: showPronouns ? 'none' : 'table-cell' }}>
-                  {personLabels[person]}
+                  {PERSON_OPTIONS.find((p) => p.id === person)?.name}
                 </td>
+
                 <td>
-                  {showPronouns && personPronouns[person]?.[0] && (
-                    <span className={styles.pronoun}>{personPronouns[person][0]} </span>
+                  {showPronouns && ZAMIRS[person]?.[0] && (
+                    <span className={styles.pronoun}>{ZAMIRS[person][0]} </span>
                   )}
-                  {row.ferd}
+                  {renderWithAffixes(row.ferd, person as Person, 'ferd')}
                 </td>
-                {person === '1' ? (
+
+                {person === '1-mutekellim' ? (
                   <td colSpan={2} className={styles.combinedCell}>
-                    {showPronouns && personPronouns[person]?.[1] && (
-                      <span className={styles.pronoun}>{personPronouns[person][1]} </span>
+                    {showPronouns && ZAMIRS[person]?.[1] && (
+                      <span className={styles.pronoun}>{ZAMIRS[person][1]} </span>
                     )}
-                    {row.tesniye || row.cem}
+                    {renderWithAffixes(row.cem, person as Person, 'cem')}
                   </td>
                 ) : (
                   <>
                     <td>
-                      {showPronouns && personPronouns[person]?.[1] && (
-                        <span className={styles.pronoun}>{personPronouns[person][1]} </span>
+                      {showPronouns && ZAMIRS[person]?.[1] && (
+                        <span className={styles.pronoun}>{ZAMIRS[person][1]} </span>
                       )}
-                      {row.tesniye}
+                      {renderWithAffixes(row.tesniye, person as Person, 'tesniye')}
                     </td>
+
                     <td>
-                      {showPronouns && personPronouns[person]?.[2] && (
-                        <span className={styles.pronoun}>{personPronouns[person][2]} </span>
+                      {showPronouns && ZAMIRS[person]?.[2] && (
+                        <span className={styles.pronoun}>{ZAMIRS[person][2]} </span>
                       )}
-                      {row.cem}
+                      {renderWithAffixes(row.cem, person as Person, 'cem')}
                     </td>
                   </>
                 )}
@@ -177,9 +182,9 @@ export default function Home() {
 
   // Handle verb form change and auto-select first verb
   const handleVerbFormChange = (value: string | number) => {
-    setSelectedVerbForm(value as string)
+    setSelectedVerbKind(value as string)
     // Auto-select the first verb if available
-    const newForm = verbForms.find((form) => form.id === value)
+    const newForm = VERB_KINDS.find((form) => form.id === value)
     if (newForm && newForm.verbs.length > 0) {
       setSelectedVerbIndex(0)
     }
@@ -194,9 +199,9 @@ export default function Home() {
             <MuiSelect
               // label="نَوْعُ الفِعْلِ:"
               // labelId="verb-form-label"
-              value={selectedVerbForm}
+              value={selectedVerbKind}
               onChange={handleVerbFormChange}
-              options={verbForms.map((form) => ({
+              options={VERB_KINDS.map((form) => ({
                 value: form.id,
                 label: form.name,
               }))}
@@ -211,12 +216,12 @@ export default function Home() {
               value={selectedVerbIndex}
               onChange={(value) => setSelectedVerbIndex(value as number)}
               options={
-                verbForms
-                  .find((form) => form.id === selectedVerbForm)
-                  ?.verbs.map((verb, index) => ({
+                VERB_KINDS.find((kind) => kind.id === selectedVerbKind)?.verbs.map(
+                  (verb, index) => ({
                     value: index,
                     label: verb,
-                  })) ?? []
+                  })
+                ) ?? []
               }
               className={styles.formControl}
             />
@@ -228,7 +233,7 @@ export default function Home() {
               // labelId="tense-label"
               value={selectedTense}
               onChange={(value) => setSelectedTense(value as string)}
-              options={tenses.map((tense) => ({
+              options={TENSE_OPTIONS.map((tense) => ({
                 value: tense.id,
                 label: tense.name,
                 hasDividerBefore: tense.hasDividerBefore,

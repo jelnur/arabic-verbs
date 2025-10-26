@@ -1,52 +1,52 @@
 tense,cem,tesniye,ferd,person
-mazi,سَدَدْنَا,,سَدَدْتُ,1
+mazi,سَدَدْنَا,,سَدَدْتُ,1-mutekellim
 mazi,سَدَدْتُمْ,سَدَدْتُمَا,سَدَدْتَ,2-muzekker
 mazi,سَدَدْتُنَّ,سَدَدْتُمَا,سَدَدْتِ,2-muennes
 mazi,سَدُّوا,سَدَّا,سَدَّ,3-muzekker
 mazi,سَدَدْنَ,سَدَّتَا,سَدَّتْ,3-muennes
-mazi-manfi-ma,مَا سَدَدْنَا,,مَا سَدَدْتُ,1
+mazi-manfi-ma,مَا سَدَدْنَا,,مَا سَدَدْتُ,1-mutekellim
 mazi-manfi-ma,مَا سَدَدْتُمْ,مَا سَدَدْتُمَا,مَا سَدَدْتَ,2-muzekker
 mazi-manfi-ma,مَا سَدَدْتُنَّ,مَا سَدَدْتُمَا,مَا سَدَدْتِ,2-muennes
 mazi-manfi-ma,مَا سَدُّوا,مَا سَدَّا,مَا سَدَّ,3-muzekker
 mazi-manfi-ma,مَا سَدَدْنَ,مَا سَدَّتَا,مَا سَدَّتْ,3-muennes
-mazi-manfi-lam,لَمْ نَسُدَّ,,لَمْ أَسُدَّ,1
+mazi-manfi-lam,لَمْ نَسُدَّ,,لَمْ أَسُدَّ,1-mutekellim
 mazi-manfi-lam,لَمْ تَسُدُّوا,لَمْ تَسُدَّا,لَمْ تَسُدَّ,2-muzekker
 mazi-manfi-lam,لَمْ تَسْدُدْنَ,لَمْ تَسُدَّا,لَمْ تَسُدِّي,2-muennes
 mazi-manfi-lam,لَمْ يَسُدُّوا,لَمْ يَسُدَّا,لَمْ يَسُدَّ,3-muzekker
 mazi-manfi-lam,لَمْ يَسْدُدْنَ,لَمْ تَسُدَّا,لَمْ تَسُدَّ,3-muennes
-muzari,نَسُدُّ,,أَسُدُّ,1
+muzari,نَسُدُّ,,أَسُدُّ,1-mutekellim
 muzari,تَسُدُّونَ,تَسُدَّانِ,تَسُدُّ,2-muzekker
 muzari,تَسْدُدْنَ,تَسُدَّانِ,تَسُدِّينَ,2-muennes
 muzari,يَسُدُّونَ,يَسُدَّانِ,يَسُدُّ,3-muzekker
 muzari,يَسْدُدْنَ,تَسُدَّانِ,تَسُدُّ,3-muennes
-muzari-manfi,لَا نَسُدُّ,,لَا أَسُدُّ,1
+muzari-manfi,لَا نَسُدُّ,,لَا أَسُدُّ,1-mutekellim
 muzari-manfi,لَا تَسُدُّونَ,لَا تَسُدَّانِ,لَا تَسُدُّ,2-muzekker
 muzari-manfi,لَا تَسْدُدْنَ,لَا تَسُدَّانِ,لَا تَسُدِّينَ,2-muennes
 muzari-manfi,لَا يَسُدُّونَ,لَا يَسُدَّانِ,لَا يَسُدُّ,3-muzekker
 muzari-manfi,لَا يَسْدُدْنَ,لَا تَسُدَّانِ,لَا تَسُدُّ,3-muennes
-amr,لِنَسُدَّ,,لِأَسُدَّ,1
+amr,لِنَسُدَّ,,لِأَسُدَّ,1-mutekellim
 amr,لِتَسُدُّو,لِتَسُدَّا,لِتَسُدَّ,2-muzekker
 amr,لِتَسْدُدْنَ,لِتَسُدَّا,لِتَسُدِّي,2-muennes
 amr,سُدُّوا,سُدَّا,سُدَّ,2-muzekker-hadis
 amr,اُسْدُدْنَ,سُدَّا,سُدِّي,2-muennes-hadis
 amr,لِيَسُدُّوا,لِيَسُدَّا,لِيَسُدَّ,3-muzekker
 amr,لِيَسْدُدْنَ,لِتَسُدَّا,لِتَسُدَّ,3-muennes
-amr-manfi,لَا نَسُدَّ,,لَا أَسُدَّ,1
+amr-manfi,لَا نَسُدَّ,,لَا أَسُدَّ,1-mutekellim
 amr-manfi,لَا تَسُدُّوا,لَا تَسُدَّا,لَا تَسُدَّ,2-muzekker
 amr-manfi,لَا تَسْدُدْنَ,لَا تَسُدَّا,لَا تَسُدِّي,2-muennes
 amr-manfi,لَا يَسُدُّوا,لَا يَسُدَّا,لَا يَسُدَّ,3-muzekker
 amr-manfi,لَا يَسْدُدْنَ,لَا تَسُدَّا,لَا تَسُدَّ,3-muennes
-mustaqbal-qarib,سَنَسُدُّ,,سَأَسُدُّ,1
+mustaqbal-qarib,سَنَسُدُّ,,سَأَسُدُّ,1-mutekellim
 mustaqbal-qarib,سَتَسُدُّونَ,سَتَسُدَّانِ,سَتَسُدُّ,2-muzekker
 mustaqbal-qarib,سَتَسْدُدْنَ,سَتَسُدَّانِ,سَتَسُدِّينَ,2-muennes
 mustaqbal-qarib,سَيَسُدُّونَ,سَيَسُدَّانِ,سَيَسُدُّ,3-muzekker
 mustaqbal-qarib,سَيَسْدُدْنَ,سَتَسُدَّانِ,سَتَسُدُّ,3-muennes
-mustaqbal-baeed,سَوْفَ نَسُدُّ,,سَوْفَ أَسُدُّ,1
+mustaqbal-baeed,سَوْفَ نَسُدُّ,,سَوْفَ أَسُدُّ,1-mutekellim
 mustaqbal-baeed,سَوْفَ تَسُدُّونَ,سَوْفَ تَسُدَّانِ,سَوْفَ تَسُدُّ,2-muzekker
 mustaqbal-baeed,سَوْفَ تَسْدُدْنَ,سَوْفَ تَسُدَّانِ,سَوْفَ تَسُدِّينَ,2-muennes
 mustaqbal-baeed,سَوْفَ يَسُدُّونَ,سَوْفَ يَسُدَّانِ,سَوْفَ يَسُدُّ,3-muzekker
 mustaqbal-baeed,سَوْفَ يَسْدُدْنَ,سَوْفَ تَسُدَّانِ,سَوْفَ تَسُدُّ,3-muennes
-mustaqbal-manfi,لَنْ نَسُدَّ,,لَنْ أَسُدَّ,1
+mustaqbal-manfi,لَنْ نَسُدَّ,,لَنْ أَسُدَّ,1-mutekellim
 mustaqbal-manfi,لَنْ تَسُدُّوا,لَنْ تَسُدَّا,لَنْ تَسُدَّ,2-muzekker
 mustaqbal-manfi,لَنْ تَسْدُدْنَ,لَنْ تَسُدَّا,لَنْ تَسُدِّي,2-muennes
 mustaqbal-manfi,لَنْ يَسُدُّوا,لَنْ يَسُدَّا,لَنْ يَسُدَّ,3-muzekker
