@@ -1,6 +1,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-arabic: 'ShaikhHamdullahMushaf', Tahoma, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,14 +17,28 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-shaikh-hamdullah), serif;
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-gutter: stable;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-loaded {
+  font-family: var(--font-arabic);
 }
 
 * {
@@ -33,6 +50,16 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: var(--font-sans);
+  }
+
+  .font-loaded {
+    font-family: var(--font-arabic);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
