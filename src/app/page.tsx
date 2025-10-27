@@ -3,11 +3,13 @@
 import { Checkbox, FormControlLabel } from '@mui/material'
 import { useEffect, useState } from 'react'
 
+
 import { MuiSelect } from '@/components/ui/mui-select'
 import { VERB_KINDS, TENSE_OPTIONS, personOrder, PERSON_OPTIONS, ZAMIRS } from '@/constants/verbs'
 import { useVerbAffixes } from '@/hooks/use-verb-affixes'
 import { useVerbData } from '@/hooks/use-verb-data'
 import { Form, Person, Kind, Tense } from '@/types/verb'
+import { parseWord } from '@/utils/arabic'
 
 import styles from './page.module.css'
 import packageJson from '../../package.json'
@@ -73,38 +75,27 @@ export default function Home() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(selections))
   }, [selectedVerbKind, selectedVerbIndex, selectedTense, showPronouns, isHydrated])
 
-  const renderWithAffixes = (value: string, person: Person, form: Form) => {
-    if (!value) return value
+  const renderWithAffixes = (text: string, person: Person, form: Form) => {
+    if (!text) return text
 
     const patternKey = `${person}-${form}`
-    const patternStr = affixPatterns[patternKey]
+    const lengthes = affixPatterns[patternKey]
 
-    if (!patternStr) return value
+    if (!lengthes) return text
 
-    try {
-      // The pattern should match the entire word and capture the affix in the last group
-      const pattern = new RegExp(patternStr)
-      const match = value.match(pattern)
+    const [prefixLength, suffixLength] = lengthes.split('-').map((x) => +x)
 
-      if (match && match.length > 1) {
-        // The last group is the affix, everything before it is the stem
-        const affix = match[match.length - 1]
-        const stem = value.slice(0, value.length - affix.length)
+    const chars = parseWord(text, prefixLength, suffixLength)
 
-        if (affix) {
-          return (
-            <>
-              {stem}
-              <span className={styles.affixRed}>{affix}</span>
-            </>
-          )
-        }
-      }
-    } catch (e) {
-      console.error(`Error processing pattern for ${patternKey}:`, e)
-    }
-
-    return value
+    return (
+      <>
+        {chars.map(({ char, type }, index) => (
+          <span key={index} className={type === 'stem' ? undefined : styles.affixRed}>
+            {char}
+          </span>
+        ))}
+      </>
+    )
   }
 
   const renderTable = () => {

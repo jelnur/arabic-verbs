@@ -1,6 +1,2 @@
 tense,cem,tesniye,ferd,person
-mazi,(.*?)(نَا)$,,(.*?)(تُ)$,1-mutekellim
-mazi,(.*?)(تُمْ)$,(.*?)(تُمَا)$,(.*?)(تَ)$,2-muzekker
-mazi,(.*?)(تُنَّ)$,(.*?)(تُمَا)$,(.*?)(تِ)$,2-muennes
-mazi,(.*?)(ُوا)$,(.*?)(َا)$,(.*?)(َ?)$,3-muzekker
-mazi,(.*?)(نَ)$,(.*?)(تَا)$,(.*?)(تْ)$,3-muennes
+mazi,0-3,,0-2,1-mutekellim
