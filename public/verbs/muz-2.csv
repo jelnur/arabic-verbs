@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,قَرَأْنَا,,قَرَأْتُ,1-mutekellim
+mazi,قَرَأْتُمْ,قَرَأْتُمَا,قَرَأْتَ,2-muzekker
+mazi,قَرَأْتُنَّ,قَرَأْتُمَا,قَرَأْتِ,2-muennes
+mazi,قَرَأُوا,قَرَآ,قَرَأَ,3-muzekker
+mazi,قَرَأْنَ,قَرَأَتَا,قَرَأَتْ,3-muennes
+mazi-manfi-ma,مَا قَرَأْنَا,,مَا قَرَأْتُ,1-mutekellim
+mazi-manfi-ma,مَا قَرَأْتُمْ,مَا قَرَأْتُمَا,مَا قَرَأْتَ,2-muzekker
+mazi-manfi-ma,مَا قَرَأْتُنَّ,مَا قَرَأْتُمَا,مَا قَرَأْتِ,2-muennes
+mazi-manfi-ma,مَا قَرَأُوا,مَا قَرَآ,مَا قَرَأَ,3-muzekker
+mazi-manfi-ma,مَا قَرَأْنَ,مَا قَرَأَتَا,مَا قَرَأَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَقْرَأْ,,لَمْ أَقْرَأْ,1-mutekellim
+mazi-manfi-lam,لَمْ تَقْرَأُوا,لَمْ تَقْرَآ,لَمْ تَقْرَأْ,2-muzekker
+mazi-manfi-lam,لَمْ تَقْرَأْنَ,لَمْ تَقْرَآ,لَمْ تَقْرَئِي,2-muennes
+mazi-manfi-lam,لَمْ يَقْرَأُوا,لَمْ يَقْرَآ,لَمْ يَقْرَأْ,3-muzekker
+mazi-manfi-lam,لَمْ يَقْرَأْنَ,لَمْ تَقْرَآ,لَمْ تَقْرَأْ,3-muennes
+muzari,نَقْرَأُ,,أَقْرَأُ,1-mutekellim
+muzari,تَقْرَأُونَ,تَقْرَآنِ,تَقْرَأُ,2-muzekker
+muzari,تَقْرَأْنَ,تَقْرَآنِ,تَقْرَئِينَ,2-muennes
+muzari,يَقْرَأُونَ,يَقْرَآنِ,يَقْرَأُ,3-muzekker
+muzari,يَقْرَأْنَ,تَقْرَآنِ,تَقْرَأُ,3-muennes
+muzari-manfi,لَا نَقْرَأُ,,لَا أَقْرَأُ,1-mutekellim
+muzari-manfi,لَا تَقْرَأُونَ,لَا تَقْرَآنِ,لَا تَقْرَأُ,2-muzekker
+muzari-manfi,لَا تَقْرَأْنَ,لَا تَقْرَآنِ,لَا تَقْرَئِينَ,2-muennes
+muzari-manfi,لَا يَقْرَأُونَ,لَا يَقْرَآنِ,لَا يَقْرَأُ,3-muzekker
+muzari-manfi,لَا يَقْرَأْنَ,لَا تَقْرَآنِ,لَا تَقْرَأُ,3-muennes
+amr,لِنَقْرَأْ,,لِأَقْرَأْ,1-mutekellim
+amr,لِتَقْرَأُوا,لِتَقْرَآ,لِتَقْرَأْ,2-muzekker
+amr,لِتَقْرَأْنَ,لِتَقْرَآ,لِتَقْرَئِي,2-muennes
+amr,اِقْرَأُوا,اِقْرَآ,اِقْرَأْ,2-muzekker-hadis
+amr,اِقْرَأْنَ,اِقْرَآ,اِقْرَئِي,2-muennes-hadis
+amr,لِيَقْرَأُوا,لِيَقْرَآ,لِيَقْرَأْ,3-muzekker
+amr,لِيَقْرَأْنَ,لِتَقْرَآ,لِتَقْرَأْ,3-muennes
+amr-manfi,لَا نَقْرَأْ,,لَا أَقْرَأْ,1-mutekellim
+amr-manfi,لَا تَقْرَأُوا,لَا تَقْرَآ,لَا تَقْرَأْ,2-muzekker
+amr-manfi,لَا تَقْرَأْنَ,لَا تَقْرَآ,لَا تَقْرَئِي,2-muennes
+amr-manfi,لَا يَقْرَأُوا,لَا يَقْرَآ,لَا يَقْرَأْ,3-muzekker
+amr-manfi,لَا يَقْرَأْنَ,لَا تَقْرَآ,لَا تَقْرَأْ,3-muennes
+mustaqbal-qarib,سَنَقْرَأُ,,سَأَقْرَأُ,1-mutekellim
+mustaqbal-qarib,سَتَقْرَأُونَ,سَتَقْرَآنِ,سَتَقْرَأُ,2-muzekker
+mustaqbal-qarib,سَتَقْرَأْنَ,سَتَقْرَآنِ,سَتَقْرَئِينَ,2-muennes
+mustaqbal-qarib,سَيَقْرَأُونَ,سَيَقْرَآنِ,سَيَقْرَأُ,3-muzekker
+mustaqbal-qarib,سَيَقْرَأْنَ,سَتَقْرَآنِ,سَتَقْرَأُ,3-muennes
+mustaqbal-baeed,سَوْفَ نَقْرَأُ,,سَوْفَ أَقْرَأُ,1-mutekellim
+mustaqbal-baeed,سَوْفَ تَقْرَأُونَ,سَوْفَ تَقْرَآنِ,سَوْفَ تَقْرَأُ,2-muzekker
+mustaqbal-baeed,سَوْفَ تَقْرَأْنَ,سَوْفَ تَقْرَآنِ,سَوْفَ تَقْرَئِينَ,2-muennes
+mustaqbal-baeed,سَوْفَ يَقْرَأُونَ,سَوْفَ يَقْرَآنِ,سَوْفَ يَقْرَأُ,3-muzekker
+mustaqbal-baeed,سَوْفَ يَقْرَأْنَ,سَوْفَ تَقْرَآنِ,سَوْفَ تَقْرَأُ,3-muennes
+mustaqbal-manfi,لَنْ نَقْرَأَ,,لَنْ أَقْرَأَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَقْرَأُوا,لَنْ تَقْرَآ,لَنْ تَقْرَأَ,2-muzekker
+mustaqbal-manfi,لَنْ تَقْرَأْنَ,لَنْ تَقْرَآ,لَنْ تَقْرَئِي,2-muennes
+mustaqbal-manfi,لَنْ يَقْرَأُوا,لَنْ يَقْرَآ,لَنْ يَقْرَأَ,3-muzekker
+mustaqbal-manfi,لَنْ يَقْرَأْنَ,لَنْ تَقْرَآ,لَنْ تَقْرَأَ,3-muennes

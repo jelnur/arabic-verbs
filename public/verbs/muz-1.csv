@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,سَأَلْنَا,,سَأَلْتُ,1-mutekellim
+mazi,سَأَلْتُمْ,سَأَلْتُمَا,سَأَلْتَ,2-muzekker
+mazi,سَأَلْتُنَّ,سَأَلْتُمَا,سَأَلْتِ,2-muennes
+mazi,سَأَلُوا,سَأَلَا,سَأَلَ,3-muzekker
+mazi,سَأَلْنَ,سَأَلَتَا,سَأَلَتْ,3-muennes
+mazi-manfi-ma,مَا سَأَلْنَا,,مَا سَأَلْتُ,1-mutekellim
+mazi-manfi-ma,مَا سَأَلْتُمْ,مَا سَأَلْتُمَا,مَا سَأَلْتَ,2-muzekker
+mazi-manfi-ma,مَا سَأَلْتُنَّ,مَا سَأَلْتُمَا,مَا سَأَلْتِ,2-muennes
+mazi-manfi-ma,مَا سَأَلُوا,مَا سَأَلَا,مَا سَأَلَ,3-muzekker
+mazi-manfi-ma,مَا سَأَلْنَ,مَا سَأَلَتَا,مَا سَأَلَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَسْأَلْ,,لَمْ أَسْأَلْ,1-mutekellim
+mazi-manfi-lam,لَمْ تَسْأَلُوا,لَمْ تَسْأَلَا,لَمْ تَسْأَلْ,2-muzekker
+mazi-manfi-lam,لَمْ تَسْأَلْنَ,لَمْ تَسْأَلَا,لَمْ تَسْأَلِي,2-muennes
+mazi-manfi-lam,لَمْ يَسْأَلُوا,لَمْ يَسْأَلَا,لَمْ يَسْأَلْ,3-muzekker
+mazi-manfi-lam,لَمْ يَسْأَلْنَ,لَمْ تَسْأَلَا,لَمْ تَسْأَلْ,3-muennes
+muzari,نَسْأَلُ,,أَسْأَلُ,1-mutekellim
+muzari,تَسْأَلُونَ,تَسْأَلَانِ,تَسْأَلُ,2-muzekker
+muzari,تَسْأَلْنَ,تَسْأَلَانِ,تَسْأَلِينَ,2-muennes
+muzari,يَسْأَلُونَ,يَسْأَلَانِ,يَسْأَلُ,3-muzekker
+muzari,يَسْأَلْنَ,تَسْأَلَانِ,تَسْأَلُ,3-muennes
+muzari-manfi,لَا نَسْأَلُ,,لَا أَسْأَلُ,1-mutekellim
+muzari-manfi,لَا تَسْأَلُونَ,لَا تَسْأَلَانِ,لَا تَسْأَلُ,2-muzekker
+muzari-manfi,لَا تَسْأَلْنَ,لَا تَسْأَلَانِ,لَا تَسْأَلِينَ,2-muennes
+muzari-manfi,لَا يَسْأَلُونَ,لَا يَسْأَلَانِ,لَا يَسْأَلُ,3-muzekker
+muzari-manfi,لَا يَسْأَلْنَ,لَا تَسْأَلَانِ,لَا تَسْأَلُ,3-muennes
+amr,لِنَسْأَلْ,,لِأَسْأَلْ,1-mutekellim
+amr,لِتَسْأَلُوا,لِتَسْأَلَا,لِتَسْأَلْ,2-muzekker
+amr,لِتَسْأَلْنَ,لِتَسْأَلَا,لِتَسْأَلِي,2-muennes
+amr,اِسْأَلُوا,اِسْأَلَا,اِسْأَلْ,2-muzekker-hadis
+amr,اِسْأَلْنَ,اِسْأَلَا,اِسْأَلِي,2-muennes-hadis
+amr,لِيَسْأَلُوا,لِيَسْأَلَا,لِيَسْأَلْ,3-muzekker
+amr,لِيَسْأَلْنَ,لِتَسْأَلَا,لِتَسْأَلْ,3-muennes
+amr-manfi,لَا نَسْأَلْ,,لَا أَسْأَلْ,1-mutekellim
+amr-manfi,لَا تَسْأَلُوا,لَا تَسْأَلَا,لَا تَسْأَلْ,2-muzekker
+amr-manfi,لَا تَسْأَلْنَ,لَا تَسْأَلَا,لَا تَسْأَلِي,2-muennes
+amr-manfi,لَا يَسْأَلُوا,لَا يَسْأَلَا,لَا يَسْأَلْ,3-muzekker
+amr-manfi,لَا يَسْأَلْنَ,لَا تَسْأَلَا,لَا تَسْأَلْ,3-muennes
+mustaqbal-qarib,سَنَسْأَلُ,,سَأَسْأَلُ,1-mutekellim
+mustaqbal-qarib,سَتَسْأَلُونَ,سَتَسْأَلَانِ,سَتَسْأَلُ,2-muzekker
+mustaqbal-qarib,سَتَسْأَلْنَ,سَتَسْأَلَانِ,سَتَسْأَلِينَ,2-muennes
+mustaqbal-qarib,سَيَسْأَلُونَ,سَيَسْأَلَانِ,سَيَسْأَلُ,3-muzekker
+mustaqbal-qarib,سَيَسْأَلْنَ,سَتَسْأَلَانِ,سَتَسْأَلُ,3-muennes
+mustaqbal-baeed,سَوْفَ نَسْأَلُ,,سَوْفَ أَسْأَلُ,1-mutekellim
+mustaqbal-baeed,سَوْفَ تَسْأَلُونَ,سَوْفَ تَسْأَلَانِ,سَوْفَ تَسْأَلُ,2-muzekker
+mustaqbal-baeed,سَوْفَ تَسْأَلْنَ,سَوْفَ تَسْأَلَانِ,سَوْفَ تَسْأَلِينَ,2-muennes
+mustaqbal-baeed,سَوْفَ يَسْأَلُونَ,سَوْفَ يَسْأَلَانِ,سَوْفَ يَسْأَلُ,3-muzekker
+mustaqbal-baeed,سَوْفَ يَسْأَلْنَ,سَوْفَ تَسْأَلَانِ,سَوْفَ تَسْأَلُ,3-muennes
+mustaqbal-manfi,لَنْ نَسْأَلَ,,لَنْ أَسْأَلَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَسْأَلُوا,لَنْ تَسْأَلَا,لَنْ تَسْأَلَ,2-muzekker
+mustaqbal-manfi,لَنْ تَسْأَلْنَ,لَنْ تَسْأَلَا,لَنْ تَسْأَلِي,2-muennes
+mustaqbal-manfi,لَنْ يَسْأَلُوا,لَنْ يَسْأَلَا,لَنْ يَسْأَلَ,3-muzekker
+mustaqbal-manfi,لَنْ يَسْأَلْنَ,لَنْ تَسْأَلَا,لَنْ تَسْأَلَ,3-muennes
