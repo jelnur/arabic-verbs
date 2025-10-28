@@ -3,7 +3,6 @@
 import { Checkbox, FormControlLabel } from '@mui/material'
 import { useEffect, useState } from 'react'
 
-
 import { MuiSelect } from '@/components/ui/mui-select'
 import { VERB_KINDS, TENSE_OPTIONS, personOrder, PERSON_OPTIONS, ZAMIRS } from '@/constants/verbs'
 import { useVerbAffixes } from '@/hooks/use-verb-affixes'
