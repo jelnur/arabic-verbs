@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 
 import { VERBS_PATH } from '@/constants/paths'
-import { AffixPatterns , Kind, Tense } from '@/types/verb'
+import { AffixPatterns, Kind, Tense } from '@/types/verb'
 
 async function fetchAffixes(kind: Kind, tense: Tense): Promise<AffixPatterns> {
   const url = `${VERBS_PATH}/${kind}-affixes.csv`

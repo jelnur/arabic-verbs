@@ -1,6 +1,6 @@
 {
   "name": "arabic-verbs",
-  "version": "1.7.3-beta",
+  "version": "1.7.4-beta",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -10,7 +10,6 @@
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "organize-imports": "prettier --write .",
     "prepare": "husky"
   },
   "dependencies": {
