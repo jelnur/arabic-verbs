@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,قُلْنَا,,قُلْتُ,1-mutekellim
+mazi,قُلْتُمْ,قُلْتُمَا,قُلْتَ,2-muzekker
+mazi,قُلْتُنَّ,قُلْتُمَا,قُلْتِ,2-muennes
+mazi,قَالُوا,قَالَا,قَالَ,3-muzekker
+mazi,قُلْنَ,قَالَتَا,قَالَتْ,3-muennes
+mazi-manfi-ma,مَا قُلْنَا,,مَا قُلْتُ,1-mutekellim
+mazi-manfi-ma,مَا قُلْتُمْ,مَا قُلْتُمَا,مَا قُلْتَ,2-muzekker
+mazi-manfi-ma,مَا قُلْتُنَّ,مَا قُلْتُمَا,مَا قُلْتِ,2-muennes
+mazi-manfi-ma,مَا قَالُوا,مَا قَالَا,مَا قَالَ,3-muzekker
+mazi-manfi-ma,مَا قُلْنَ,مَا قَالَتَا,مَا قَالَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَقُلْ,,لَمْ أَقُلْ,1-mutekellim
+mazi-manfi-lam,لَمْ تَقُولُوا,لَمْ تَقُولَا,لَمْ تَقُلْ,2-muzekker
+mazi-manfi-lam,لَمْ تَقُلْنَ,لَمْ تَقُولَا,لَمْ تَقُولِي,2-muennes
+mazi-manfi-lam,لَمْ يَقُولُوا,لَمْ يَقُولَا,لَمْ يَقُلْ,3-muzekker
+mazi-manfi-lam,لَمْ يَقُلْنَ,لَمْ تَقُولَا,لَمْ تَقُلْ,3-muennes
+muzari,نَقُولُ,,أَقُولُ,1-mutekellim
+muzari,تَقُولُونَ,تَقُولَانِ,تَقُولُ,2-muzekker
+muzari,تَقُلْنَ,تَقُولَانِ,تَقُولِينَ,2-muennes
+muzari,يَقُولُونَ,يَقُولَانِ,يَقُولُ,3-muzekker
+muzari,يَقُلْنَ,تَقُولَانِ,تَقُولُ,3-muennes
+muzari-manfi,لَا نَقُولُ,,لَا أَقُولُ,1-mutekellim
+muzari-manfi,لَا تَقُولُوا,لَا تَقُولَا,لَا تَقُلْ,2-muzekker
+muzari-manfi,لَا تَقُلْنَ,لَا تَقُولَا,لَا تَقُولِي,2-muennes
+muzari-manfi,لَا يَقُولُوا,لَا يَقُولَا,لَا يَقُلْ,3-muzekker
+muzari-manfi,لَا يَقُلْنَ,لَا تَقُولَا,لَا تَقُولِي,3-muennes
+amr,لِنَقُلْ,,لِأَقُلْ,1-mutekellim
+amr,لِتَقُولُوا,لِتَقُولَا,لِتَقُلْ,2-muzekker
+amr,لِتَقُلْنَ,لِتَقُولَا,لِتَقُولِي,2-muennes
+amr,قُولُوا,قُولَا,قُلْ,2-muzekker-hadis
+amr,قُلْنَ,قُولَا,قُولِي,2-muennes-hadis
+amr,لِيَقُولُوا,لِيَقُولَا,لِيَقُلْ,3-muzekker
+amr,لِيَقُلْنَ,لِتَقُولَا,لِتَقُلْ,3-muennes
+amr-manfi,لَا نَقُلْ,,لَا أَقُلْ,1-mutekellim
+amr-manfi,لَا تَقُولُوا,لَا تَقُولَا,لَا تَقُلْ,2-muzekker
+amr-manfi,لَا تَقُلْنَ,لَا تَقُولَا,لَا تَقُولِي,2-muennes
+amr-manfi,لَا يَقُولُوا,لَا يَقُولَا,لَا يَقُلْ,3-muzekker
+amr-manfi,لَا يَقُلْنَ,لَا تَقُولَا,لَا تَقُلْ,3-muennes
+mustaqbal-qarib,سَوْفَ أَقُولُ,,سَوْفَ أَقُولُ,1-mutekellim
+mustaqbal-qarib,سَوْفَ تَقُولُونَ,سَوْفَ تَقُولَانِ,سَوْفَ تَقُولُ,2-muzekker
+mustaqbal-qarib,سَوْفَ تَقُلْنَ,سَوْفَ تَقُولَانِ,سَوْفَ تَقُولِينَ,2-muennes
+mustaqbal-qarib,سَوْفَ يَقُولُونَ,سَوْفَ يَقُولَانِ,سَوْفَ يَقُولُ,3-muzekker
+mustaqbal-qarib,سَوْفَ يَقُلْنَ,سَوْفَ تَقُولَانِ,سَوْفَ تَقُولُ,3-muennes
+mustaqbal-baeed,سَأَقُولُ,,سَأَقُولُ,1-mutekellim
+mustaqbal-baeed,سَتَقُولُونَ,سَتَقُولَانِ,سَتَقُولُ,2-muzekker
+mustaqbal-baeed,سَتَقُلْنَ,سَتَقُولَانِ,سَتَقُولِينَ,2-muennes
+mustaqbal-baeed,سَيَقُولُونَ,سَيَقُولَانِ,سَيَقُولُ,3-muzekker
+mustaqbal-baeed,سَيَقُلْنَ,سَتَقُولَانِ,سَتَقُولُ,3-muennes
+mustaqbal-manfi,لَنْ نَقُولَ,,لَنْ أَقُولَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَقُولُوا,لَنْ تَقُولَا,لَنْ تَقُولَ,2-muzekker
+mustaqbal-manfi,لَنْ تَقُلْنَ,لَنْ تَقُولَا,لَنْ تَقُولِي,2-muennes
+mustaqbal-manfi,لَنْ يَقُولُوا,لَنْ يَقُولَا,لَنْ يَقُولَ,3-muzekker
+mustaqbal-manfi,لَنْ يَقُلْنَ,لَنْ تَقُولَا,لَنْ تَقُولَ,3-muennes

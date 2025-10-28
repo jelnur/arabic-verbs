@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,نِمْنَا,,نِمْتُ,1-mutekellim
+mazi,نِمْتُمْ,نِمْتُمَا,نِمْتَ,2-muzekker
+mazi,نِمْتُنَّ,نِمْتُمَا,نِمْتِ,2-muennes
+mazi,نَامُوا,نَامَا,نَامَ,3-muzekker
+mazi,نِمْنَ,نَامَتَا,نَامَتْ,3-muennes
+mazi-manfi-ma,مَا نِمْنَا,,مَا نِمْتُ,1-mutekellim
+mazi-manfi-ma,مَا نِمْتُمْ,مَا نِمْتُمَا,مَا نِمْتَ,2-muzekker
+mazi-manfi-ma,مَا نِمْتُنَّ,مَا نِمْتُمَا,مَا نِمْتِ,2-muennes
+mazi-manfi-ma,مَا نَامُوا,مَا نَامَا,مَا نَامَ,3-muzekker
+mazi-manfi-ma,مَا نِمْنَ,مَا نَامَتَا,مَا نَامَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَنَمْ,,لَمْ أَنَمْ,1-mutekellim
+mazi-manfi-lam,لَمْ تَنَامُوا,لَمْ تَنَامَا,لَمْ تَنَمْ,2-muzekker
+mazi-manfi-lam,لَمْ تَنَمْنَ,لَمْ تَنَامَا,لَمْ تَنَامِي,2-muennes
+mazi-manfi-lam,لَمْ يَنَامُوا,لَمْ يَنَامَا,لَمْ يَنَمْ,3-muzekker
+mazi-manfi-lam,لَمْ يَنَمْنَ,لَمْ تَنَامَا,لَمْ تَنَمْ,3-muennes
+muzari,نَنَامُ,,أَنَامُ,1-mutekellim
+muzari,تَنَامُونَ,تَنَامَانِ,تَنَامُ,2-muzekker
+muzari,تَنَمْنَ,تَنَامَانِ,تَنَامِينَ,2-muennes
+muzari,يَنَامُونَ,يَنَامَانِ,يَنَامُ,3-muzekker
+muzari,يَنَمْنَ,تَنَامَانِ,تَنَامُ,3-muennes
+muzari-manfi,لَا نَنَامُ,,لَا أَنَامُ,1-mutekellim
+muzari-manfi,لَا تَنَامُوا,لَا تَنَامَا,لَا تَنَمْ,2-muzekker
+muzari-manfi,لَا تَنَمْنَ,لَا تَنَامَا,لَا تَنَامِي,2-muennes
+muzari-manfi,لَا يَنَامُوا,لَا يَنَامَا,لَا يَنَمْ,3-muzekker
+muzari-manfi,لَا يَنَمْنَ,لَا تَنَامَا,لَا تَنَامِي,3-muennes
+amr,لِنَنَمْ,,لِأَنَمْ,1-mutekellim
+amr,لِتَنَامُوا,لِتَنَامَا,لِتَنَمْ,2-muzekker
+amr,لِتَنَمْنَ,لِتَنَامَا,لِتَنَامِي,2-muennes
+amr,نَامُوا,نَامَا,نَمْ,2-muzekker-hadis
+amr,نَمْنَ,نَامَا,نَامِي,2-muennes-hadis
+amr,لِيَنَامُوا,لِيَنَامَا,لِيَنَمْ,3-muzekker
+amr,لِيَنَمْنَ,لِتَنَامَا,لِتَنَمْ,3-muennes
+amr-manfi,لَا نَنَمْ,,لَا أَنَمْ,1-mutekellim
+amr-manfi,لَا تَنَامُوا,لَا تَنَامَا,لَا تَنَمْ,2-muzekker
+amr-manfi,لَا تَنَمْنَ,لَا تَنَامَا,لَا تَنَامِي,2-muennes
+amr-manfi,لَا يَنَامُوا,لَا يَنَامَا,لَا يَنَمْ,3-muzekker
+amr-manfi,لَا يَنَمْنَ,لَا تَنَامَا,لَا تَنَمْ,3-muennes
+mustaqbal-qarib,سَوْفَ أَنَامُ,,سَوْفَ أَنَامُ,1-mutekellim
+mustaqbal-qarib,سَوْفَ تَنَامُونَ,سَوْفَ تَنَامَانِ,سَوْفَ تَنَامُ,2-muzekker
+mustaqbal-qarib,سَوْفَ تَنَمْنَ,سَوْفَ تَنَامَانِ,سَوْفَ تَنَامِينَ,2-muennes
+mustaqbal-qarib,سَوْفَ يَنَامُونَ,سَوْفَ يَنَامَانِ,سَوْفَ يَنَامُ,3-muzekker
+mustaqbal-qarib,سَوْفَ يَنَمْنَ,سَوْفَ تَنَامَانِ,سَوْفَ تَنَامُ,3-muennes
+mustaqbal-baeed,سَأَنَامُ,,سَأَنَامُ,1-mutekellim
+mustaqbal-baeed,سَتَنَامُونَ,سَتَنَامَانِ,سَتَنَامُ,2-muzekker
+mustaqbal-baeed,سَتَنَمْنَ,سَتَنَامَانِ,سَتَنَامِينَ,2-muennes
+mustaqbal-baeed,سَيَنَامُونَ,سَيَنَامَانِ,سَيَنَامُ,3-muzekker
+mustaqbal-baeed,سَيَنَمْنَ,سَتَنَامَانِ,سَتَنَامُ,3-muennes
+mustaqbal-manfi,لَنْ نَنَامَ,,لَنْ أَنَامَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَنَامُوا,لَنْ تَنَامَا,لَنْ تَنَامَ,2-muzekker
+mustaqbal-manfi,لَنْ تَنَمْنَ,لَنْ تَنَامَا,لَنْ تَنَامِي,2-muennes
+mustaqbal-manfi,لَنْ يَنَامُوا,لَنْ يَنَامَا,لَنْ يَنَامَ,3-muzekker
+mustaqbal-manfi,لَنْ يَنَمْنَ,لَنْ تَنَامَا,لَنْ تَنَامَ,3-muennes

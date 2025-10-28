@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,فُزْنَا,,فُزْتُ,1-mutekellim
+mazi,فُزْتُمْ,فُزْتُمَا,فُزْتَ,2-muzekker
+mazi,فُزْتُنَّ,فُزْتُمَا,فُزْتِ,2-muennes
+mazi,فَازُوا,فَازَا,فَازَ,3-muzekker
+mazi,فُزْنَ,فَازَتَا,فَازَتْ,3-muennes
+mazi-manfi-ma,مَا فُزْنَا,,مَا فُزْتُ,1-mutekellim
+mazi-manfi-ma,مَا فُزْتُمْ,مَا فُزْتُمَا,مَا فُزْتَ,2-muzekker
+mazi-manfi-ma,مَا فُزْتُنَّ,مَا فُزْتُمَا,مَا فُزْتِ,2-muennes
+mazi-manfi-ma,مَا فَازُوا,مَا فَازَا,مَا فَازَ,3-muzekker
+mazi-manfi-ma,مَا فُزْنَ,مَا فَازَتَا,مَا فَازَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَفُزْ,,لَمْ أَفُزْ,1-mutekellim
+mazi-manfi-lam,لَمْ تَفُوزُوا,لَمْ تَفُوزَا,لَمْ تَفُزْ,2-muzekker
+mazi-manfi-lam,لَمْ تَفُزْنَ,لَمْ تَفُوزَا,لَمْ تَفُوزِي,2-muennes
+mazi-manfi-lam,لَمْ يَفُوزُوا,لَمْ يَفُوزَا,لَمْ يَفُزْ,3-muzekker
+mazi-manfi-lam,لَمْ يَفُزْنَ,لَمْ تَفُوزَا,لَمْ تَفُزْ,3-muennes
+muzari,نَفُوزُ,,أَفُوزُ,1-mutekellim
+muzari,تَفُوزُونَ,تَفُوزَانِ,تَفُوزُ,2-muzekker
+muzari,تَفُزْنَ,تَفُوزَانِ,تَفُوزِينَ,2-muennes
+muzari,يَفُوزُونَ,يَفُوزَانِ,يَفُوزُ,3-muzekker
+muzari,يَفُزْنَ,تَفُوزَانِ,تَفُوزُ,3-muennes
+muzari-manfi,لَا نَفُوزُ,,لَا أَفُوزُ,1-mutekellim
+muzari-manfi,لَا تَفُوزُوا,لَا تَفُوزَا,لَا تَفُزْ,2-muzekker
+muzari-manfi,لَا تَفُزْنَ,لَا تَفُوزَا,لَا تَفُوزِي,2-muennes
+muzari-manfi,لَا يَفُوزُوا,لَا يَفُوزَا,لَا يَفُزْ,3-muzekker
+muzari-manfi,لَا يَفُزْنَ,لَا تَفُوزَا,لَا تَفُوزِي,3-muennes
+amr,لِنَفُزْ,,لِأَفُزْ,1-mutekellim
+amr,لِتَفُوزُوا,لِتَفُوزَا,لِتَفُزْ,2-muzekker
+amr,لِتَفُزْنَ,لِتَفُوزَا,لِتَفُوزِي,2-muennes
+amr,افُوزُوا,افُوزَا,فُزْ,2-muzekker-hadis
+amr,افُزْنَ,افُوزَا,افُوزِي,2-muennes-hadis
+amr,لِيَفُوزُوا,لِيَفُوزَا,لِيَفُزْ,3-muzekker
+amr,لِيَفُزْنَ,لِتَفُوزَا,لِتَفُزْ,3-muennes
+amr-manfi,لَا نَفُزْ,,لَا أَفُزْ,1-mutekellim
+amr-manfi,لَا تَفُوزُوا,لَا تَفُوزَا,لَا تَفُزْ,2-muzekker
+amr-manfi,لَا تَفُزْنَ,لَا تَفُوزَا,لَا تَفُوزِي,2-muennes
+amr-manfi,لَا يَفُوزُوا,لَا يَفُوزَا,لَا يَفُزْ,3-muzekker
+amr-manfi,لَا يَفُزْنَ,لَا تَفُوزَا,لَا تَفُزْ,3-muennes
+mustaqbal-qarib,سَوْفَ أَفُوزُ,,سَوْفَ أَفُوزُ,1-mutekellim
+mustaqbal-qarib,سَوْفَ تَفُوزُونَ,سَوْفَ تَفُوزَانِ,سَوْفَ تَفُوزُ,2-muzekker
+mustaqbal-qarib,سَوْفَ تَفُزْنَ,سَوْفَ تَفُوزَانِ,سَوْفَ تَفُوزِينَ,2-muennes
+mustaqbal-qarib,سَوْفَ يَفُوزُونَ,سَوْفَ يَفُوزَانِ,سَوْفَ يَفُوزُ,3-muzekker
+mustaqbal-qarib,سَوْفَ يَفُزْنَ,سَوْفَ تَفُوزَانِ,سَوْفَ تَفُوزُ,3-muennes
+mustaqbal-baeed,سَأَفُوزُ,,سَأَفُوزُ,1-mutekellim
+mustaqbal-baeed,سَتَفُوزُونَ,سَتَفُوزَانِ,سَتَفُوزُ,2-muzekker
+mustaqbal-baeed,سَتَفُزْنَ,سَتَفُوزَانِ,سَتَفُوزِينَ,2-muennes
+mustaqbal-baeed,سَيَفُوزُونَ,سَيَفُوزَانِ,سَيَفُوزُ,3-muzekker
+mustaqbal-baeed,سَيَفُزْنَ,سَتَفُوزَانِ,سَتَفُوزُ,3-muennes
+mustaqbal-manfi,لَنْ نَفُوزَ,,لَنْ أَفُوزَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَفُوزُوا,لَنْ تَفُوزَا,لَنْ تَفُوزَ,2-muzekker
+mustaqbal-manfi,لَنْ تَفُزْنَ,لَنْ تَفُوزَا,لَنْ تَفُوزِي,2-muennes
+mustaqbal-manfi,لَنْ يَفُوزُوا,لَنْ يَفُوزَا,لَنْ يَفُوزَ,3-muzekker
+mustaqbal-manfi,لَنْ يَفُزْنَ,لَنْ تَفُوزَا,لَنْ تَفُوزَ,3-muennes
