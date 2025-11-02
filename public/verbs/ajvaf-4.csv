@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,زُرْنَا,,زُرْتُ,1-mutekellim
+mazi,زُرْتُمْ,زُرْتُمَا,زُرْتَ,2-muzekker
+mazi,زُرْتُنَّ,زُرْتُمَا,زُرْتِ,2-muennes
+mazi,زَارُوا,زَارَا,زَارَ,3-muzekker
+mazi,زُرْنَ,زَارَتَا,زَارَتْ,3-muennes
+mazi-manfi-ma,مَا زُرْنَا,,مَا زُرْتُ,1-mutekellim
+mazi-manfi-ma,مَا زُرْتُمْ,مَا زُرْتُمَا,مَا زُرْتَ,2-muzekker
+mazi-manfi-ma,مَا زُرْتُنَّ,مَا زُرْتُمَا,مَا زُرْتِ,2-muennes
+mazi-manfi-ma,مَا زَارُوا,مَا زَارَا,مَا زَارَ,3-muzekker
+mazi-manfi-ma,مَا زُرْنَ,مَا زَارَتَا,مَا زَارَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَزُرْ,,لَمْ أَزُرْ,1-mutekellim
+mazi-manfi-lam,لَمْ تَزُورُوا,لَمْ تَزُورَا,لَمْ تَزُرْ,2-muzekker
+mazi-manfi-lam,لَمْ تَزُرْنَ,لَمْ تَزُورَا,لَمْ تَزُورِي,2-muennes
+mazi-manfi-lam,لَمْ يَزُورُوا,لَمْ يَزُورَا,لَمْ يَزُرْ,3-muzekker
+mazi-manfi-lam,لَمْ يَزُرْنَ,لَمْ تَزُورَا,لَمْ تَزُرْ,3-muennes
+muzari,نَزُورُ,,أَزُورُ,1-mutekellim
+muzari,تَزُورُونَ,تَزُورَانِ,تَزُورُ,2-muzekker
+muzari,تَزُرْنَ,تَزُورَانِ,تَزُورِينَ,2-muennes
+muzari,يَزُورُونَ,يَزُورَانِ,يَزُورُ,3-muzekker
+muzari,يَزُرْنَ,تَزُورَانِ,تَزُورُ,3-muennes
+muzari-manfi,لَا نَزُورُ,,لَا أَزُورُ,1-mutekellim
+muzari-manfi,لَا تَزُورُوا,لَا تَزُورَا,لَا تَزُرْ,2-muzekker
+muzari-manfi,لَا تَزُرْنَ,لَا تَزُورَا,لَا تَزُورِي,2-muennes
+muzari-manfi,لَا يَزُورُوا,لَا يَزُورَا,لَا يَزُرْ,3-muzekker
+muzari-manfi,لَا يَزُرْنَ,لَا تَزُورَا,لَا تَزُورِي,3-muennes
+amr,لِنَزُرْ,,لِأَزُرْ,1-mutekellim
+amr,لِتَزُورُوا,لِتَزُورَا,لِتَزُرْ,2-muzekker
+amr,لِتَزُرْنَ,لِتَزُورَا,لِتَزُورِي,2-muennes
+amr,زُورُوا,زُورَا,زُرْ,2-muzekker-hadis
+amr,زُرْنَ,زُورَا,زُورِي,2-muennes-hadis
+amr,لِيَزُورُوا,لِيَزُورَا,لِيَزُرْ,3-muzekker
+amr,لِيَزُرْنَ,لِتَزُورَا,لِتَزُرْ,3-muennes
+amr-manfi,لَا نَزُرْ,,لَا أَزُرْ,1-mutekellim
+amr-manfi,لَا تَزُورُوا,لَا تَزُورَا,لَا تَزُرْ,2-muzekker
+amr-manfi,لَا تَزُرْنَ,لَا تَزُورَا,لَا تَزُورِي,2-muennes
+amr-manfi,لَا يَزُورُوا,لَا يَزُورَا,لَا يَزُرْ,3-muzekker
+amr-manfi,لَا يَزُرْنَ,لَا تَزُورَا,لَا تَزُرْ,3-muennes
+mustaqbal-qarib,سَوْفَ أَزُورُ,,سَوْفَ أَزُورُ,1-mutekellim
+mustaqbal-qarib,سَوْفَ تَزُورُونَ,سَوْفَ تَزُورَانِ,سَوْفَ تَزُورُ,2-muzekker
+mustaqbal-qarib,سَوْفَ تَزُرْنَ,سَوْفَ تَزُورَانِ,سَوْفَ تَزُورِينَ,2-muennes
+mustaqbal-qarib,سَوْفَ يَزُورُونَ,سَوْفَ يَزُورَانِ,سَوْفَ يَزُورُ,3-muzekker
+mustaqbal-qarib,سَوْفَ يَزُرْنَ,سَوْفَ تَزُورَانِ,سَوْفَ تَزُورُ,3-muennes
+mustaqbal-baeed,سَأَزُورُ,,سَأَزُورُ,1-mutekellim
+mustaqbal-baeed,سَتَزُورُونَ,سَتَزُورَانِ,سَتَزُورُ,2-muzekker
+mustaqbal-baeed,سَتَزُرْنَ,سَتَزُورَانِ,سَتَزُورِينَ,2-muennes
+mustaqbal-baeed,سَيَزُورُونَ,سَيَزُورَانِ,سَيَزُورُ,3-muzekker
+mustaqbal-baeed,سَيَزُرْنَ,سَتَزُورَانِ,سَتَزُورُ,3-muennes
+mustaqbal-manfi,لَنْ نَزُورَ,,لَنْ أَزُورَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَزُورُوا,لَنْ تَزُورَا,لَنْ تَزُورَ,2-muzekker
+mustaqbal-manfi,لَنْ تَزُرْنَ,لَنْ تَزُورَا,لَنْ تَزُورِي,2-muennes
+mustaqbal-manfi,لَنْ يَزُورُوا,لَنْ يَزُورَا,لَنْ يَزُورَ,3-muzekker
+mustaqbal-manfi,لَنْ يَزُرْنَ,لَنْ تَزُورَا,لَنْ تَزُورَ,3-muennes

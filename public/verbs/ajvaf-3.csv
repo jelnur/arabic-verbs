@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,سِرْنَا,,سِرْتُ,1-mutekellim
+mazi,سِرْتُمْ,سِرْتُمَا,سِرْتَ,2-muzekker
+mazi,سِرْتُنَّ,سِرْتُمَا,سِرْتِ,2-muennes
+mazi,سَارُوا,سَارَا,سَارَ,3-muzekker
+mazi,سِرْنَ,سَارَتَا,سَارَتْ,3-muennes
+mazi-manfi-ma,مَا سِرْنَا,,مَا سِرْتُ,1-mutekellim
+mazi-manfi-ma,مَا سِرْتُمْ,مَا سِرْتُمَا,مَا سِرْتَ,2-muzekker
+mazi-manfi-ma,مَا سِرْتُنَّ,مَا سِرْتُمَا,مَا سِرْتِ,2-muennes
+mazi-manfi-ma,مَا سَارُوا,مَا سَارَا,مَا سَارَ,3-muzekker
+mazi-manfi-ma,مَا سِرْنَ,مَا سَارَتَا,مَا سَارَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَسِرْ,,لَمْ أَسِرْ,1-mutekellim
+mazi-manfi-lam,لَمْ تَسِيرُوا,لَمْ تَسِيرَا,لَمْ تَسِرْ,2-muzekker
+mazi-manfi-lam,لَمْ تَسِرْنَ,لَمْ تَسِيرَا,لَمْ تَسِيرِي,2-muennes
+mazi-manfi-lam,لَمْ يَسِيرُوا,لَمْ يَسِيرَا,لَمْ يَسِرْ,3-muzekker
+mazi-manfi-lam,لَمْ يَسِرْنَ,لَمْ تَسِيرَا,لَمْ تَسِرْ,3-muennes
+muzari,نَسِيرُ,,أَسِيرُ,1-mutekellim
+muzari,تَسِيرُونَ,تَسِيرَانِ,تَسِيرُ,2-muzekker
+muzari,تَسِرْنَ,تَسِيرَانِ,تَسِيرِينَ,2-muennes
+muzari,يَسِيرُونَ,يَسِيرَانِ,يَسِيرُ,3-muzekker
+muzari,يَسِرْنَ,تَسِيرَانِ,تَسِيرُ,3-muennes
+muzari-manfi,لَا نَسِيرُ,,لَا أَسِيرُ,1-mutekellim
+muzari-manfi,لَا تَسِيرُوا,لَا تَسِيرَا,لَا تَسِرْ,2-muzekker
+muzari-manfi,لَا تَسِرْنَ,لَا تَسِيرَا,لَا تَسِيرِي,2-muennes
+muzari-manfi,لَا يَسِيرُوا,لَا يَسِيرَا,لَا يَسِرْ,3-muzekker
+muzari-manfi,لَا يَسِرْنَ,لَا تَسِيرَا,لَا تَسِيرِي,3-muennes
+amr,لِنَسِرْ,,لِأَسِرْ,1-mutekellim
+amr,لِتَسِيرُوا,لِتَسِيرَا,لِتَسِرْ,2-muzekker
+amr,لِتَسِرْنَ,لِتَسِيرَا,لِتَسِيرِي,2-muennes
+amr,اسِيرُوا,اسِيرَا,سِرْ,2-muzekker-hadis
+amr,اسِرْنَ,اسِيرَا,اسِيرِي,2-muennes-hadis
+amr,لِيَسِيرُوا,لِيَسِيرَا,لِيَسِرْ,3-muzekker
+amr,لِيَسِرْنَ,لِتَسِيرَا,لِتَسِرْ,3-muennes
+amr-manfi,لَا نَسِرْ,,لَا أَسِرْ,1-mutekellim
+amr-manfi,لَا تَسِيرُوا,لَا تَسِيرَا,لَا تَسِرْ,2-muzekker
+amr-manfi,لَا تَسِرْنَ,لَا تَسِيرَا,لَا تَسِيرِي,2-muennes
+amr-manfi,لَا يَسِيرُوا,لَا يَسِيرَا,لَا يَسِرْ,3-muzekker
+amr-manfi,لَا يَسِرْنَ,لَا تَسِيرَا,لَا تَسِرْ,3-muennes
+mustaqbal-qarib,سَوْفَ أَسِيرُ,,سَوْفَ أَسِيرُ,1-mutekellim
+mustaqbal-qarib,سَوْفَ تَسِيرُونَ,سَوْفَ تَسِيرَانِ,سَوْفَ تَسِيرُ,2-muzekker
+mustaqbal-qarib,سَوْفَ تَسِرْنَ,سَوْفَ تَسِيرَانِ,سَوْفَ تَسِيرِينَ,2-muennes
+mustaqbal-qarib,سَوْفَ يَسِيرُونَ,سَوْفَ يَسِيرَانِ,سَوْفَ يَسِيرُ,3-muzekker
+mustaqbal-qarib,سَوْفَ يَسِرْنَ,سَوْفَ تَسِيرَانِ,سَوْفَ تَسِيرُ,3-muennes
+mustaqbal-baeed,سَأَسِيرُ,,سَأَسِيرُ,1-mutekellim
+mustaqbal-baeed,سَتَسِيرُونَ,سَتَسِيرَانِ,سَتَسِيرُ,2-muzekker
+mustaqbal-baeed,سَتَسِرْنَ,سَتَسِيرَانِ,سَتَسِيرِينَ,2-muennes
+mustaqbal-baeed,سَيَسِيرُونَ,سَيَسِيرَانِ,سَيَسِيرُ,3-muzekker
+mustaqbal-baeed,سَيَسِرْنَ,سَتَسِيرَانِ,سَتَسِيرُ,3-muennes
+mustaqbal-manfi,لَنْ نَسِيرَ,,لَنْ أَسِيرَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَسِيرُوا,لَنْ تَسِيرَا,لَنْ تَسِيرَ,2-muzekker
+mustaqbal-manfi,لَنْ تَسِرْنَ,لَنْ تَسِيرَا,لَنْ تَسِيرِي,2-muennes
+mustaqbal-manfi,لَنْ يَسِيرُوا,لَنْ يَسِيرَا,لَنْ يَسِيرَ,3-muzekker
+mustaqbal-manfi,لَنْ يَسِرْنَ,لَنْ تَسِيرَا,لَنْ تَسِيرَ,3-muennes
