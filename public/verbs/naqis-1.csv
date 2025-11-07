@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,غَزَوْا,غَزَوَا,غَزَا,3-muzekker
+mazi,غَزَوْنَ,غَزَتَا,غَزَتْ,3-muennes
+mazi,غَزَوْتُمْ,غَزَوْتُمَا,غَزَوْتَ,2-muzekker
+mazi,غَزَوْتُنَّ,غَزَوْتُمَا,غَزَوْتِ,2-muennes
+mazi,غَزَوْنَا,,غَزَوْتُ,1-mutekellim
+mazi-manfi-ma,مَا غَزَوْا,مَا غَزَوَا,مَا غَزَا,3-muzekker
+mazi-manfi-ma,مَا غَزَوْنَ,مَا غَزَتَا,مَا غَزَتْ,3-muennes
+mazi-manfi-ma,مَا غَزَوْتُمْ,مَا غَزَوْتُمَا,مَا غَزَوْتَ,2-muzekker
+mazi-manfi-ma,مَا غَزَوْتُنَّ,مَا غَزَوْتُمَا,مَا غَزَوْتِ,2-muennes
+mazi-manfi-ma,مَا غَزَوْنَا,,مَا غَزَوْتُ,1-mutekellim
+mazi-manfi-lam,لَمْ يَغْزُوا,لَمْ يَغْزُوَا,لَمْ يَغْزُ,3-muzekker
+mazi-manfi-lam,لَمْ يَغْزُونَ,لَمْ تَغْزُوَا,لَمْ تَغْزُ,3-muennes
+mazi-manfi-lam,لَمْ تَغْزُوا,لَمْ تَغْزُوَا,لَمْ تَغْزُ,2-muzekker
+mazi-manfi-lam,لَمْ تَغْزُونَ,لَمْ تَغْزُوَا,لَمْ تَغْزِي,2-muennes
+mazi-manfi-lam,لَمْ نَغْزُ,,لَمْ أَغْزُ,1-mutekellim
+muzari,يَغْزُونَ,يَغْزُوَانِ,يَغْزُو,3-muzekker
+muzari,يَغْزُونَ,تَغْزُوَانِ,تَغْزُو,3-muennes
+muzari,تَغْزُونَ,تَغْزُوَانِ,تَغْزُو,2-muzekker
+muzari,تَغْزُونَ,تَغْزُوَانِ,تَغْزِينَ,2-muennes
+muzari,نَغْزُو,,أَغْزُو,1-mutekellim
+muzari-manfi,لَا يَغْزُونَ,لَا يَغْزُوَانِ,لَا يَغْزُو,3-muzekker
+muzari-manfi,لَا يَغْزُونَ,لَا تَغْزُوَانِ,لَا تَغْزُو,3-muennes
+muzari-manfi,لَا تَغْزُونَ,لَا تَغْزُوَانِ,لَا تَغْزُو,2-muzekker
+muzari-manfi,لَا تَغْزُونَ,لَا تَغْzُوَانِ,لَا تَغْزِينَ,2-muennes
+muzari-manfi,لَا نَغْزُو,,لَا أَغْزُو,1-mutekellim
+amr,لِنَغْزُ,,لِأَغْزُ,1-mutekellim
+amr,لِتَغْزُوا,لِتَغْزُوَا,لِتَغْزُ,2-muzekker
+amr,لِتَغْزُونَ,لِتَغْزُوَا,لِتَغْزِي,2-muennes
+amr,اُغْزُوا,اُغْزُوَا,اُغْزُ,2-muzekker-hadis
+amr,اُغْزُونَ,اُغْزُوَا,اُغْزِي,2-muennes-hadis
+amr,لِيَغْزُوا,لِيَغْزُوَا,لِيَغْزُ,3-muzekker
+amr,لِيَغْزُونَ,لِتَغْزُوَا,لِتَغْزُ,3-muennes
+amr-manfi,لَا نَغْزُ,,لَا أَغْزُ,1-mutekellim
+amr-manfi,لَا تَغْزُوا,لَا تَغْزُوَا,لَا تَغْزُ,2-muzekker
+amr-manfi,لَا تَغْزُونَ,لَا تَغْزُوَا,لَا تَغْزِي,2-muennes
+amr-manfi,لَا يَغْزُوا,لَا يَغْزُوَا,لَا يَغْزُ,3-muzekker
+amr-manfi,لَا يَغْزُونَ,لَا تَغْزُوَا,لَا تَغْزُ,3-muennes
+mustaqbal-qarib,سَيَغْزُونَ,سَيَغْزُوَانِ,سَيَغْزُو,3-muzekker
+mustaqbal-qarib,سَيَغْزُونَ,سَتَغْزُوَانِ,سَتَغْزُو,3-muennes
+mustaqbal-qarib,سَتَغْزُونَ,سَتَغْزُوَانِ,سَتَغْزُو,2-muzekker
+mustaqbal-qarib,سَتَغْزُونَ,سَتَغْzُوَانِ,سَتَغْزِينَ,2-muennes
+mustaqbal-qarib,سَنَغْزُو,,سَأَغْزُو,1-mutekellim
+mustaqbal-baeed,سَوْفَ يَغْزُونَ,سَوْفَ يَغْزُوَانِ,سَوْفَ يَغْزُو,3-muzekker
+mustaqbal-baeed,سَوْفَ يَغْزُونَ,سَوْفَ تَغْزُوَانِ,سَوْفَ تَغْزُو,3-muennes
+mustaqbal-baeed,سَوْفَ تَغْزُونَ,سَوْفَ تَغْزُوَانِ,سَوْفَ تَغْزُو,2-muzekker
+mustaqbal-baeed,سَوْفَ تَغْزُونَ,سَوْفَ تَغْzُوَانِ,سَوْفَ تَغْزِينَ,2-muennes
+mustaqbal-baeed,سَوْفَ نَغْزُو,,سَوْفَ أَغْزُو,1-mutekellim
+mustaqbal-manfi,لَنْ يَغْزُوا,لَنْ يَغْزُوَا,لَنْ يَغْزُوَ,3-muzekker
+mustaqbal-manfi,لَنْ يَغْزُونَ,لَنْ تَغْزُوَا,لَنْ تَغْزُوَ,3-muennes
+mustaqbal-manfi,لَنْ تَغْزُوا,لَنْ تَغْزُوَا,لَنْ تَغْزُوَ,2-muzekker
+mustaqbal-manfi,لَنْ تَغْزُونَ,لَنْ تَغْزُوَا,لَنْ تَغْزِي,2-muennes
+mustaqbal-manfi,لَنْ نَغْزُوَ,,لَنْ أَغْزُوَ,1-mutekellim

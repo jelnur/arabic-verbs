@@ -5,6 +5,7 @@ export const VERB_KINDS: KindVerbs[] = [
   { id: 'muz', name: 'مُزَاحَفٌ', verbs: ['اَخَذَ', 'سَأَلَ', 'قَرَأَ'] },
   { id: 'mudaaf', name: 'مُضَاعَفٌ', verbs: ['سَدَّ', 'فَرَّ'] },
   { id: 'ajvaf', name: 'أَجْوَفُ', verbs: ['قَالَ', 'فَازَ', 'نَامَ', 'سَارَ', 'زَارَ'] },
+  { id: 'naqis', name: 'نَاقِصٌ', verbs: ['رَمَي', 'غَزَا'] },
 ]
 
 export const TENSE_OPTIONS: TenseOption[] = [

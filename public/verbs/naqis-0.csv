@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,رَمَوْا,رَمَيَا,رَمَى,3-muzekker
+mazi,رَمَيْنَ,رَمَتَا,رَمَتْ,3-muennes
+mazi,رَمَيْتُمْ,رَمَيْتُمَا,رَمَيْتَ,2-muzekker
+mazi,رَمَيْتُنَّ,رَمَيْتُمَا,رَمَيْتِ,2-muennes
+mazi,رَمَيْنَا,,رَمَيْتُ,1-mutekellim
+mazi-manfi-ma,مَا رَمَوْا,مَا رَمَيَا,مَا رَمَى,3-muzekker
+mazi-manfi-ma,مَا رَمَيْنَ,مَا رَمَتَا,مَا رَمَتْ,3-muennes
+mazi-manfi-ma,مَا رَمَيْتُمْ,مَا رَمَيْتُمَا,مَا رَمَيْتَ,2-muzekker
+mazi-manfi-ma,مَا رَمَيْتُنَّ,مَا رَمَيْتُمَا,مَا رَمَيْتِ,2-muennes
+mazi-manfi-ma,مَا رَمَيْنَا,,مَا رَمَيْتُ,1-mutekellim
+mazi-manfi-lam,لَمْ يَرْمُوا,لَمْ يَرْمِيَا,لَمْ يَرْمِ,3-muzekker
+mazi-manfi-lam,لَمْ يَرْمِينَ,لَمْ تَرْمِيَا,لَمْ تَرْمِ,3-muennes
+mazi-manfi-lam,لَمْ تَرْمُوا,لَمْ تَرْمِيَا,لَمْ تَرْمِ,2-muzekker
+mazi-manfi-lam,لَمْ تَرْمِينَ,لَمْ تَرْمِيَا,لَمْ تَرْمِي,2-muennes
+mazi-manfi-lam,لَمْ نَرْمِ,,لَمْ أَرْمِ,1-mutekellim
+muzari,يَرْمُونَ,يَرْمِيَانِ,يَرْمِي,3-muzekker
+muzari,يَرْمِينَ,تَرْمِيَانِ,تَرْمِي,3-muennes
+muzari,تَرْمُونَ,تَرْمِيَانِ,تَرْمِي,2-muzekker
+muzari,تَرْمِينَ,تَرْمِيَانِ,تَرْمِينَ,2-muennes
+muzari,نَرْمِي,,أَرْمِي,1-mutekellim
+muzari-manfi,لَا يَرْمُونَ,لَا يَرْمِيَانِ,لَا يَرْمِي,3-muzekker
+muzari-manfi,لَا يَرْمِينَ,لَا تَرْمِيَانِ,لَا تَرْمِي,3-muennes
+muzari-manfi,لَا تَرْمُونَ,لَا تَرْمِيَانِ,لَا تَرْمِي,2-muzekker
+muzari-manfi,لَا تَرْمِينَ,لَا تَرْمِيَانِ,لَا تَرْمِينَ,2-muennes
+muzari-manfi,لَا نَرْمِي,,لَا أَرْمِي,1-mutekellim
+amr,لِنَرْمِ,,لِأَرْمِ,1-mutekellim
+amr,لِتَرْمُوا,لِتَرْمِيَا,لِتَرْمِ,2-muzekker
+amr,لِتَرْمِينَ,لِتَرْمِيَا,لِتَرْمِي,2-muennes
+amr,اِرْمُوا,اِرْمِيَا,اِرْمِ,2-muzekker-hadis
+amr,اِرْمِينَ,اِرْمِيَا,اِرْمِي,2-muennes-hadis
+amr,لِيَرْمُوا,لِيَرْمِيَا,لِيَرْمِ,3-muzekker
+amr,لِيَرْمِينَ,لِتَرْمِيَا,لِتَرْمِ,3-muennes
+amr-manfi,لَا نَرْمِ,,لَا أَرْمِ,1-mutekellim
+amr-manfi,لَا تَرْمُوا,لَا تَرْمِيَا,لَا تَرْمِ,2-muzekker
+amr-manfi,لَا تَرْمِينَ,لَا تَرْمِيَا,لَا تَرْمِي,2-muennes
+amr-manfi,لَا يَرْمُوا,لَا يَرْمِيَا,لَا يَرْمِ,3-muzekker
+amr-manfi,لَا يَرْمِينَ,لَا تَرْمِيَا,لَا تَرْمِ,3-muennes
+mustaqbal-qarib,سَيَرْمُونَ,سَيَرْمِيَانِ,سَيَرْمِي,3-muzekker
+mustaqbal-qarib,سَيَرْمِينَ,سَتَرْمِيَانِ,سَتَرْمِي,3-muennes
+mustaqbal-qarib,سَتَرْمُونَ,سَتَرْمِيَانِ,سَتَرْمِي,2-muzekker
+mustaqbal-qarib,سَتَرْمِينَ,سَتَرْمِيَانِ,سَتَرْمِينَ,2-muennes
+mustaqbal-qarib,سَنَرْمِي,,سَأَرْمِي,1-mutekellim
+mustaqbal-baeed,سَوْفَ يَرْمُونَ,سَوْفَ يَرْمِيَانِ,سَوْفَ يَرْمِي,3-muzekker
+mustaqbal-baeed,سَوْفَ يَرْمِينَ,سَوْفَ تَرْمِيَانِ,سَوْفَ تَرْمِي,3-muennes
+mustaqbal-baeed,سَوْفَ تَرْمُونَ,سَوْفَ تَرْمِيَانِ,سَوْفَ تَرْمِي,2-muzekker
+mustaqbal-baeed,سَوْفَ تَرْمِينَ,سَوْفَ تَرْمِيَانِ,سَوْفَ تَرْمِينَ,2-muennes
+mustaqbal-baeed,سَوْفَ نَرْمِي,,سَوْفَ أَرْمِي,1-mutekellim
+mustaqbal-manfi,لَنْ يَرْمُوا,لَنْ يَرْمِيَا,لَنْ يَرْمِيَ,3-muzekker
+mustaqbal-manfi,لَنْ يَرْمِينَ,لَنْ تَرْمِيَا,لَنْ تَرْمِيَ,3-muennes
+mustaqbal-manfi,لَنْ تَرْمُوا,لَنْ تَرْمِيَا,لَنْ تَرْمِيَ,2-muzekker
+mustaqbal-manfi,لَنْ تَرْمِينَ,لَنْ تَرْمِيَا,لَنْ تَرْمِي,2-muennes
+mustaqbal-manfi,لَنْ نَرْمِيَ,,لَنْ أَرْمِيَ,1-mutekellim
