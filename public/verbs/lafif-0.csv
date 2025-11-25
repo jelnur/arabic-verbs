@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,وَقَيْنَا,,وَقَيْتُ,1-mutekellim
+mazi,وَقَيْتُمْ,وَقَيْتُمَا,وَقَيْتَ,2-muzekker
+mazi,وَقَيْتُنَّ,وَقَيْتُمَا,وَقَيْتِ,2-muennes
+mazi,وَقَوْا,وَقَيَا,وَقَى,3-muzekker
+mazi,وَقَيْنَ,وَقَتَا,وَقَتْ,3-muennes
+mazi-manfi-ma,مَا وَقَيْنَا,,مَا وَقَيْتُ,1-mutekellim
+mazi-manfi-ma,مَا وَقَيْتُمْ,مَا وَقَيْتُمَا,مَا وَقَيْتَ,2-muzekker
+mazi-manfi-ma,مَا وَقَيْتُنَّ,مَا وَقَيْتُمَا,مَا وَقَيْتِ,2-muennes
+mazi-manfi-ma,مَا وَقَوْا,مَا وَقَيَا,مَا وَقَى,3-muzekker
+mazi-manfi-ma,مَا وَقَيْنَ,مَا وَقَتَا,مَا وَقَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَقِ,,لَمْ أَقِ,1-mutekellim
+mazi-manfi-lam,لَمْ تَقُوا,لَمْ تَقِيَا,لَمْ تَقِ,2-muzekker
+mazi-manfi-lam,لَمْ تَقِينَ,لَمْ تَقِيَا,لَمْ تَقِي,2-muennes
+mazi-manfi-lam,لَمْ يَقُوا,لَمْ يَقِيَا,لَمْ يَقِ,3-muzekker
+mazi-manfi-lam,لَمْ يَقِينَ,لَمْ تَقِيَا,لَمْ تَقِ,3-muennes
+muzari,نَقِي,,أَقِي,1-mutekellim
+muzari,تَقُونَ,تَقِيَانِ,تَقِي,2-muzekker
+muzari,تَقِينَ,تَقِيَانِ,تَقِينَ,2-muennes
+muzari,يَقُونَ,يَقِيَانِ,يَقِي,3-muzekker
+muzari,يَقِينَ,تَقِيَانِ,تَقِي,3-muennes
+muzari-manfi,لَا نَقِي,,لَا أَقِي,1-mutekellim
+muzari-manfi,لَا تَقُونَ,لَا تَقِيَانِ,لَا تَقِي,2-muzekker
+muzari-manfi,لَا تَقِينَ,لَا تَقِيَانِ,لَا تَقِينَ,2-muennes
+muzari-manfi,لَا يَقُونَ,لَا يَقِيَانِ,لَا يَقِي,3-muzekker
+muzari-manfi,لَا يَقِينَ,لَا تَقِيَانِ,لَا تَقِي,3-muennes
+amr,لِنَقِ,,لِأَقِ,1-mutekellim
+amr,لِتَقُوا,لِتَقِيَا,لِتَقِ,2-muzekker
+amr,لِتَقِينَ,لِتَقِيَا,لِتَقِي,2-muennes
+amr,قُوا,قِيَا,قِ,2-muzekker-hadis
+amr,قِينَ,قِيَا,قِي,2-muennes-hadis
+amr,لِيَقُوا,لِيَقِيَا,لِيَقِ,3-muzekker
+amr,لِيَقِينَ,لِتَقِيَا,لِتَقِ,3-muennes
+amr-manfi,لَا نَقِ,,لَا أَقِ,1-mutekellim
+amr-manfi,لَا تَقُوا,لَا تَقِيَا,لَا تَقِ,2-muzekker
+amr-manfi,لَا تَقِينَ,لَا تَقِيَا,لَا تَقِي,2-muennes
+amr-manfi,لَا يَقُوا,لَا يَقِيَا,لَا يَقِ,3-muzekker
+amr-manfi,لَا يَقِينَ,لَا تَقِيَا,لَا تَقِ,3-muennes
+mustaqbal-qarib,سَنَقِي,,سَأَقِي,1-mutekellim
+mustaqbal-qarib,سَتَقُونَ,سَتَقِيَانِ,سَتَقِي,2-muzekker
+mustaqbal-qarib,سَتَقِينَ,سَتَقِيَانِ,سَتَقِينَ,2-muennes
+mustaqbal-qarib,سَيَقُونَ,سَيَقِيَانِ,سَيَقِي,3-muzekker
+mustaqbal-qarib,سَيَقِينَ,سَتَقِيَانِ,سَتَقِي,3-muennes
+mustaqbal-baeed,سَوْفَ نَقِي,,سَوْفَ أَقِي,1-mutekellim
+mustaqbal-baeed,سَوْفَ تَقُونَ,سَوْفَ تَقِيَانِ,سَوْفَ تَقِي,2-muzekker
+mustaqbal-baeed,سَوْفَ تَقِينَ,سَوْفَ تَقِيَانِ,سَوْفَ تَقِينَ,2-muennes
+mustaqbal-baeed,سَوْفَ يَقُونَ,سَوْفَ يَقِيَانِ,سَوْفَ يَقِي,3-muzekker
+mustaqbal-baeed,سَوْفَ يَقِينَ,سَوْفَ تَقِيَانِ,سَوْفَ تَقِي,3-muennes
+mustaqbal-manfi,لَنْ نَقِيَ,,لَنْ أَقِيَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَقُوا,لَنْ تَقِيَا,لَنْ تَقِيَ,2-muzekker
+mustaqbal-manfi,لَنْ تَقِينَ,لَنْ تَقِيَا,لَنْ تَقِي,2-muennes
+mustaqbal-manfi,لَنْ يَقُوا,لَنْ يَقِيَا,لَنْ يَقِيَ,3-muzekker
+mustaqbal-manfi,لَنْ يَقِينَ,لَنْ تَقِيَا,لَنْ تَقِيَ,3-muennes

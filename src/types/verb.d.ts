@@ -1,4 +1,4 @@
-export type Kind = 'salim' | 'muz' | 'mudaaf' | 'ajvaf' | 'naqis' | 'misal'
+export type Kind = 'salim' | 'muz' | 'mudaaf' | 'ajvaf' | 'naqis' | 'misal' | 'lafif'
 
 export type Form = 'ferd' | 'tesniye' | 'cem'
 
