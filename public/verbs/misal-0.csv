@@ -1,0 +1,54 @@
+tense,cem,tesniye,ferd,person
+mazi,وَصَلْنَا,,وَصَلْتُ,1-mutekellim
+mazi,وَصَلْتُمْ,وَصَلْتُمَا,وَصَلْتَ,2-muzekker
+mazi,وَصَلْتُنَّ,وَصَلْتُمَا,وَصَلْتِ,2-muennes
+mazi,وَصَلُوا,وَصَلَا,وَصَلَ,3-muzekker
+mazi,وَصَلْنَ,وَصَلَتَا,وَصَلَتْ,3-muennes
+mazi-manfi-ma,مَا وَصَلْنَا,,مَا وَصَلْتُ,1-mutekellim
+mazi-manfi-ma,مَا وَصَلْتُمْ,مَا وَصَلْتُمَا,مَا وَصَلْتَ,2-muzekker
+mazi-manfi-ma,مَا وَصَلْتُنَّ,مَا وَصَلْتُمَا,مَا وَصَلْتِ,2-muennes
+mazi-manfi-ma,مَا وَصَلُوا,مَا وَصَلَا,مَا وَصَلَ,3-muzekker
+mazi-manfi-ma,مَا وَصَلْنَ,مَا وَصَلَتَا,مَا وَصَلَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَصِلْ,,لَمْ أَصِلْ,1-mutekellim
+mazi-manfi-lam,لَمْ تَصِلُوا,لَمْ تَصِلَا,لَمْ تَصِلْ,2-muzekker
+mazi-manfi-lam,لَمْ تَصِلْنَ,لَمْ تَصِلَا,لَمْ تَصِلِي,2-muennes
+mazi-manfi-lam,لَمْ يَصِلُوا,لَمْ يَصِلَا,لَمْ يَصِلْ,3-muzekker
+mazi-manfi-lam,لَمْ يَصِلْنَ,لَمْ تَصِلَا,لَمْ تَصِلْ,3-muennes
+muzari,نَصِلُ,,أَصِلُ,1-mutekellim
+muzari,تَصِلُونَ,تَصِلَانِ,تَصِلُ,2-muzekker
+muzari,تَصِلْنَ,تَصِلَانِ,تَصِلِينَ,2-muennes
+muzari,يَصِلُونَ,يَصِلَانِ,يَصِلُ,3-muzekker
+muzari,يَصِلْنَ,تَصِلَانِ,تَصِلُ,3-muennes
+muzari-manfi,لَا نَصِلُ,,لَا أَصِلُ,1-mutekellim
+muzari-manfi,لَا تَصِلُونَ,لَا تَصِلَانِ,لَا تَصِلُ,2-muzekker
+muzari-manfi,لَا تَصِلْنَ,لَا تَصِلَانِ,لَا تَصِلِينَ,2-muennes
+muzari-manfi,لَا يَصِلُونَ,لَا يَصِلَانِ,لَا يَصِلُ,3-muzekker
+muzari-manfi,لَا يَصِلْنَ,لَا تَصِلَانِ,لَا تَصِلُ,3-muennes
+amr,لِنَصِلْ,,لِأَصِلْ,1-mutekellim
+amr,لِتَصِلُوا,لِتَصِلَا,لِتَصِلْ,2-muzekker
+amr,لِتَصِلْنَ,لِتَصِلَا,لِتَصِلِي,2-muennes
+amr,اُصِلُوا,اُصِلَا,اُصِلْ,2-muzekker-hadis
+amr,اُصِلْنَ,اُصِلَا,اُصِلِي,2-muennes-hadis
+amr,لِيَصِلُوا,لِيَصِلَا,لِيَصِلْ,3-muzekker
+amr,لِيَصِلْنَ,لِتَصِلَا,لِتَصِلْ,3-muennes
+amr-manfi,لَا نَصِلْ,,لَا أَصِلْ,1-mutekellim
+amr-manfi,لَا تَصِلُوا,لَا تَصِلَا,لَا تَصِلْ,2-muzekker
+amr-manfi,لَا تَصِلْنَ,لَا تَصِلَا,لَا تَصِلِي,2-muennes
+amr-manfi,لَا يَصِلُوا,لَا يَصِلَا,لَا يَصِلْ,3-muzekker
+amr-manfi,لَا يَصِلْنَ,لَا تَصِلَا,لَا تَصِلْ,3-muennes
+mustaqbal-qarib,سَنَصِلُ,,سَأَصِلُ,1-mutekellim
+mustaqbal-qarib,سَتَصِلُونَ,سَتَصِلَانِ,سَتَصِلُ,2-muzekker
+mustaqbal-qarib,سَتَصِلْنَ,سَتَصِلَانِ,سَتَصِلِينَ,2-muennes
+mustaqbal-qarib,سَيَصِلُونَ,سَيَصِلَانِ,سَيَصِلُ,3-muzekker
+mustaqbal-qarib,سَيَصِلْنَ,سَتَصِلَانِ,سَتَصِلُ,3-muennes
+mustaqbal-baeed,سَوْفَ نَصِلُ,,سَوْفَ أَصِلُ,1-mutekellim
+mustaqbal-baeed,سَوْفَ تَصِلُونَ,سَوْفَ تَصِلَانِ,سَوْفَ تَصِلُ,2-muzekker
+mustaqbal-baeed,سَوْفَ تَصِلْنَ,سَوْفَ تَصِلَانِ,سَوْفَ تَصِلِينَ,2-muennes
+mustaqbal-baeed,سَوْفَ يَصِلُونَ,سَوْفَ يَصِلَانِ,سَوْفَ يَصِلُ,3-muzekker
+mustaqbal-baeed,سَوْفَ يَصِلْنَ,سَوْفَ تَصِلَانِ,سَوْفَ تَصِلُ,3-muennes
+mustaqbal-manfi,لَنْ نَصِلَ,,لَنْ أَصِلَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَصِلُوا,لَنْ تَصِلَا,لَنْ تَصِلَ,2-muzekker
+mustaqbal-manfi,لَنْ تَصِلْنَ,لَنْ تَصِلَا,لَنْ تَصِلِي,2-muennes
+mustaqbal-manfi,لَنْ يَصِلُوا,لَنْ يَصِلَا,لَنْ يَصِلَ,3-muzekker
+mustaqbal-manfi,لَنْ يَصِلْنَ,لَنْ تَصِلَا,لَنْ تَصِلَ,3-muennes
+

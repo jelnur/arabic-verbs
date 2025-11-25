@@ -1,0 +1,54 @@
+tense,cem,tesniye,ferd,person
+mazi,يَسَرْنَا,,يَسَرْتُ,1-mutekellim
+mazi,يَسَرْتُمْ,يَسَرْتُمَا,يَسَرْتَ,2-muzekker
+mazi,يَسَرْتُنَّ,يَسَرْتُمَا,يَسَرْتِ,2-muennes
+mazi,يَسَرُوا,يَسَرَا,يَسَرَ,3-muzekker
+mazi,يَسَرْنَ,يَسَرَتَا,يَسَرَتْ,3-muennes
+mazi-manfi-ma,مَا يَسَرْنَا,,مَا يَسَرْتُ,1-mutekellim
+mazi-manfi-ma,مَا يَسَرْتُمْ,مَا يَسَرْتُمَا,مَا يَسَرْتَ,2-muzekker
+mazi-manfi-ma,مَا يَسَرْتُنَّ,مَا يَسَرْتُمَا,مَا يَسَرْتِ,2-muennes
+mazi-manfi-ma,مَا يَسَرُوا,مَا يَسَرَا,مَا يَسَرَ,3-muzekker
+mazi-manfi-ma,مَا يَسَرْنَ,مَا يَسَرَتَا,مَا يَسَرَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَيْسِرْ,,لَمْ أَيْسِرْ,1-mutekellim
+mazi-manfi-lam,لَمْ تَيْسِرُوا,لَمْ تَيْسِرَا,لَمْ تَيْسِرْ,2-muzekker
+mazi-manfi-lam,لَمْ تَيْسِرْنَ,لَمْ تَيْسِرَا,لَمْ تَيْسِرِي,2-muennes
+mazi-manfi-lam,لَمْ يَيْسِرُوا,لَمْ يَيْسِرَا,لَمْ يَيْسِرْ,3-muzekker
+mazi-manfi-lam,لَمْ يَيْسِرْنَ,لَمْ تَيْسِرَا,لَمْ تَيْسِرْ,3-muennes
+muzari,نَيْسِرُ,,أَيْسِرُ,1-mutekellim
+muzari,تَيْسِرُونَ,تَيْسِرَانِ,تَيْسِرُ,2-muzekker
+muzari,تَيْسِرْنَ,تَيْسِرَانِ,تَيْسِرِينَ,2-muennes
+muzari,يَيْسِرُونَ,يَيْسِرَانِ,يَيْسِرُ,3-muzekker
+muzari,يَيْسِرْنَ,تَيْسِرَانِ,تَيْسِرُ,3-muennes
+muzari-manfi,لَا نَيْسِرُ,,لَا أَيْسِرُ,1-mutekellim
+muzari-manfi,لَا تَيْسِرُونَ,لَا تَيْسِرَانِ,لَا تَيْسِرُ,2-muzekker
+muzari-manfi,لَا تَيْسِرْنَ,لَا تَيْسِرَانِ,لَا تَيْسِرِينَ,2-muennes
+muzari-manfi,لَا يَيْسِرُونَ,لَا يَيْسِرَانِ,لَا يَيْسِرُ,3-muzekker
+muzari-manfi,لَا يَيْسِرْنَ,لَا تَيْسِرَانِ,لَا تَيْسِرُ,3-muennes
+amr,لِنَيْسِرْ,,لِأَيْسِرْ,1-mutekellim
+amr,لِتَيْسِرُوا,لِتَيْسِرَا,لِتَيْسِرْ,2-muzekker
+amr,لِتَيْسِرْنَ,لِتَيْسِرَا,لِتَيْسِرِي,2-muennes
+amr,يَسِرُوا,يَسِرَا,يَسِرْ,2-muzekker-hadis
+amr,يَسِرْنَ,يَسِرَا,يَسِرِي,2-muennes-hadis
+amr,لِيَيْسِرُوا,لِيَيْسِرَا,لِيَيْسِرْ,3-muzekker
+amr,لِيَيْسِرْنَ,لِتَيْسِرَا,لِتَيْسِرْ,3-muennes
+amr-manfi,لَا نَيْسِرْ,,لَا أَيْسِرْ,1-mutekellim
+amr-manfi,لَا تَيْسِرُوا,لَا تَيْسِرَا,لَا تَيْسِرْ,2-muzekker
+amr-manfi,لَا تَيْسِرْنَ,لَا تَيْسِرَا,لَا تَيْسِرِي,2-muennes
+amr-manfi,لَا يَيْسِرُوا,لَا يَيْسِرَا,لَا يَيْسِرْ,3-muzekker
+amr-manfi,لَا يَيْسِرْنَ,لَا تَيْسِرَا,لَا تَيْسِرْ,3-muennes
+mustaqbal-qarib,سَنَيْسِرُ,,سَأَيْسِرُ,1-mutekellim
+mustaqbal-qarib,سَتَيْسِرُونَ,سَتَيْسِرَانِ,سَتَيْسِرُ,2-muzekker
+mustaqbal-qarib,سَتَيْسِرْنَ,سَتَيْسِرَانِ,سَتَيْسِرِينَ,2-muennes
+mustaqbal-qarib,سَيَيْسِرُونَ,سَيَيْسِرَانِ,سَيَيْسِرُ,3-muzekker
+mustaqbal-qarib,سَيَيْسِرْنَ,سَتَيْسِرَانِ,سَتَيْسِرُ,3-muennes
+mustaqbal-baeed,سَوْفَ نَيْسِرُ,,سَوْفَ أَيْسِرُ,1-mutekellim
+mustaqbal-baeed,سَوْفَ تَيْسِرُونَ,سَوْفَ تَيْسِرَانِ,سَوْفَ تَيْسِرُ,2-muzekker
+mustaqbal-baeed,سَوْفَ تَيْسِرْنَ,سَوْفَ تَيْسِرَانِ,سَوْفَ تَيْسِرِينَ,2-muennes
+mustaqbal-baeed,سَوْفَ يَيْسِرُونَ,سَوْفَ يَيْسِرَانِ,سَوْفَ يَيْسِرُ,3-muzekker
+mustaqbal-baeed,سَوْفَ يَيْسِرْنَ,سَوْفَ تَيْسِرَانِ,سَوْفَ تَيْسِرُ,3-muennes
+mustaqbal-manfi,لَنْ نَيْسِرَ,,لَنْ أَيْسِرَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَيْسِرُوا,لَنْ تَيْسِرَا,لَنْ تَيْسِرَ,2-muzekker
+mustaqbal-manfi,لَنْ تَيْسِرْنَ,لَنْ تَيْسِرَا,لَنْ تَيْسِرِي,2-muennes
+mustaqbal-manfi,لَنْ يَيْسِرُوا,لَنْ يَيْسِرَا,لَنْ يَيْسِرَ,3-muzekker
+mustaqbal-manfi,لَنْ يَيْسِرْنَ,لَنْ تَيْسِرَا,لَنْ تَيْسِرَ,3-muennes
+
