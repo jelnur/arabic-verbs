@@ -1,0 +1,53 @@
+tense,cem,tesniye,ferd,person
+mazi,كَوَيْنَا,,كَوَيْتُ,1-mutekellim
+mazi,كَوَيْتُمْ,كَوَيْتُمَا,كَوَيْتَ,2-muzekker
+mazi,كَوَيْتُنَّ,كَوَيْتُمَا,كَوَيْتِ,2-muennes
+mazi,كَوَوْا,كَوَيَا,كَوَى,3-muzekker
+mazi,كَوَيْنَ,كَوَتَا,كَوَتْ,3-muennes
+mazi-manfi-ma,مَا كَوَيْنَا,,مَا كَوَيْتُ,1-mutekellim
+mazi-manfi-ma,مَا كَوَيْتُمْ,مَا كَوَيْتُمَا,مَا كَوَيْتَ,2-muzekker
+mazi-manfi-ma,مَا كَوَيْتُنَّ,مَا كَوَيْتُمَا,مَا كَوَيْتِ,2-muennes
+mazi-manfi-ma,مَا كَوَوْا,مَا كَوَيَا,مَا كَوَى,3-muzekker
+mazi-manfi-ma,مَا كَوَيْنَ,مَا كَوَتَا,مَا كَوَتْ,3-muennes
+mazi-manfi-lam,لَمْ نَكْوِ,,لَمْ أَكْوِ,1-mutekellim
+mazi-manfi-lam,لَمْ تَكْوُ,لَمْ تَكْوِيَا,لَمْ تَكْوِ,2-muzekker
+mazi-manfi-lam,لَمْ تَكْوِينَ,لَمْ تَكْوِيَا,لَمْ تَكْوِي,2-muennes
+mazi-manfi-lam,لَمْ يَكْوُ,لَمْ يَكْوِيَا,لَمْ يَكْوِ,3-muzekker
+mazi-manfi-lam,لَمْ يَكْوِينَ,لَمْ تَكْوِيَا,لَمْ تَكْوِ,3-muennes
+muzari,نَكْوِي,,أَكْوِي,1-mutekellim
+muzari,تَكْوُنَ,تَكْوِيَانِ,تَكْوِي,2-muzekker
+muzari,تَكْوِينَ,تَكْوِيَانِ,تَكْوِينَ,2-muennes
+muzari,يَكْوُنَ,يَكْوِيَانِ,يَكْوِي,3-muzekker
+muzari,يَكْوِينَ,تَكْوِيَانِ,تَكْوِي,3-muennes
+muzari-manfi,لَا نَكْوِي,,لَا أَكْوِي,1-mutekellim
+muzari-manfi,لَا تَكْوُنَ,لَا تَكْوِيَانِ,لَا تَكْوِي,2-muzekker
+muzari-manfi,لَا تَكْوِينَ,لَا تَكْوِيَانِ,لَا تَكْوِينَ,2-muennes
+muzari-manfi,لَا يَكْوُنَ,لَا يَكْوِيَانِ,لَا يَكْوِي,3-muzekker
+muzari-manfi,لَا يَكْوِينَ,لَا تَكْوِيَانِ,لَا تَكْوِي,3-muennes
+amr,لِنَكْوِ,,لِأَكْوِ,1-mutekellim
+amr,لِتَكْوُ,لِتَكْوِيَا,لِتَكْوِ,2-muzekker
+amr,لِتَكْوِينَ,لِتَكْوِيَا,لِتَكْوِي,2-muennes
+amr,اِكْوُ,اِكْوِيَا,اِكْوِ,2-muzekker-hadis
+amr,اِكْوِينَ,اِكْوِيَا,اِكْوِي,2-muennes-hadis
+amr,لِيَكْوُ,لِيَكْوِيَا,لِيَكْوِ,3-muzekker
+amr,لِيَكْوِينَ,لِتَكْوِيَا,لِتَكْوِ,3-muennes
+amr-manfi,لَا نَكْوِ,,لَا أَكْوِ,1-mutekellim
+amr-manfi,لَا تَكْوُ,لَا تَكْوِيَا,لَا تَكْوِ,2-muzekker
+amr-manfi,لَا تَكْوِينَ,لَا تَكْوِيَا,لَا تَكْوِي,2-muennes
+amr-manfi,لَا يَكْوُ,لَا يَكْوِيَا,لَا يَكْوِ,3-muzekker
+amr-manfi,لَا يَكْوِينَ,لَا تَكْوِيَا,لَا تَكْوِ,3-muennes
+mustaqbal-qarib,سَنَكْوِي,,سَأَكْوِي,1-mutekellim
+mustaqbal-qarib,سَتَكْوُنَ,سَتَكْوِيَانِ,سَتَكْوِي,2-muzekker
+mustaqbal-qarib,سَتَكْوِينَ,سَتَكْوِيَانِ,سَتَكْوِينَ,2-muennes
+mustaqbal-qarib,سَيَكْوُنَ,سَيَكْوِيَانِ,سَيَكْوِي,3-muzekker
+mustaqbal-qarib,سَيَكْوِينَ,سَتَكْوِيَانِ,سَتَكْوِي,3-muennes
+mustaqbal-baeed,سَوْفَ نَكْوِي,,سَوْفَ أَكْوِي,1-mutekellim
+mustaqbal-baeed,سَوْفَ تَكْوُنَ,سَوْفَ تَكْوِيَانِ,سَوْفَ تَكْوِي,2-muzekker
+mustaqbal-baeed,سَوْفَ تَكْوِينَ,سَوْفَ تَكْوِيَانِ,سَوْفَ تَكْوِينَ,2-muennes
+mustaqbal-baeed,سَوْفَ يَكْوُنَ,سَوْفَ يَكْوِيَانِ,سَوْفَ يَكْوِي,3-muzekker
+mustaqbal-baeed,سَوْفَ يَكْوِينَ,سَوْفَ تَكْوِيَانِ,سَوْفَ تَكْوِي,3-muennes
+mustaqbal-manfi,لَنْ نَكْوِيَ,,لَنْ أَكْوِيَ,1-mutekellim
+mustaqbal-manfi,لَنْ تَكْوُ,لَنْ تَكْوِيَا,لَنْ تَكْوِيَ,2-muzekker
+mustaqbal-manfi,لَنْ تَكْوِينَ,لَنْ تَكْوِيَا,لَنْ تَكْوِي,2-muennes
+mustaqbal-manfi,لَنْ يَكْوُ,لَنْ يَكْوِيَا,لَنْ يَكْوِيَ,3-muzekker
+mustaqbal-manfi,لَنْ يَكْوِينَ,لَنْ تَكْوِيَا,لَنْ تَكْوِيَ,3-muennes
