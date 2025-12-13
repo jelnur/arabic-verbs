@@ -28,3 +28,21 @@ export const parseWord = (text: string, prefixLength: number, suffixLength: numb
 
   return result as Parts[]
 }
+
+export const parseWordWithHighlight = (
+  text: string,
+  startChars: number,
+  endChars: number
+): Parts[] => {
+  const chars = splitByDiacritics(text)
+
+  const result = chars.map((char, index) => {
+    if (index < startChars) return { char, type: 'prefix' }
+
+    if (index >= chars.length - endChars) return { char, type: 'suffix' }
+
+    return { char, type: 'stem' }
+  })
+
+  return result as Parts[]
+}

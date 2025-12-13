@@ -1,19 +1,22 @@
 'use client'
 
-import { Checkbox, FormControlLabel } from '@mui/material'
+import { Checkbox, FormControlLabel, Tab, Tabs } from '@mui/material'
 import { useEffect, useState } from 'react'
 
 import { MuiSelect } from '@/components/ui/mui-select'
 import { VERB_KINDS, TENSE_OPTIONS, personOrder, PERSON_OPTIONS, ZAMIRS } from '@/constants/verbs'
+import { BABLAR_VERBS, BABLAR_HIGHLIGHT_CONFIG } from '@/constants/babs'
+import { useBabData } from '@/hooks/use-bab-data'
 import { useVerbAffixes } from '@/hooks/use-verb-affixes'
 import { useVerbData } from '@/hooks/use-verb-data'
 import { Form, Person, Kind, Tense } from '@/types/verb'
-import { parseWord } from '@/utils/arabic'
+import { parseWord, parseWordWithHighlight } from '@/utils/arabic'
 
 import styles from './page.module.css'
 import packageJson from '../../package.json'
 
 const STORAGE_KEY = 'selections'
+const TAB_STORAGE_KEY = 'selectedTab'
 
 interface StoredSelections {
   verbKind: string
@@ -23,11 +26,15 @@ interface StoredSelections {
 }
 
 export default function Home() {
+  const [selectedTab, setSelectedTab] = useState<number>(0)
   const [selectedVerbKind, setSelectedVerbKind] = useState<string>(VERB_KINDS[0].id)
   const [selectedTense, setSelectedTense] = useState<string>(TENSE_OPTIONS[0].id)
   const [selectedVerbIndex, setSelectedVerbIndex] = useState<number>(0)
   const [showPronouns, setShowPronouns] = useState<boolean>(false)
-  const [isHydrated, setIsHydrated] = useState(false)
+  const [isHydrated, setIsHydrated] = useState<boolean>(false)
+
+  // For bablar tab - only verb selector with "faala" (فَعَلَ)
+  const [selectedBablarVerbIndex, setSelectedBablarVerbIndex] = useState<number>(0)
 
   // Use react-query to fetch and cache verb data and affix patterns
   const { data: verbData = [], isLoading } = useVerbData(
@@ -38,6 +45,9 @@ export default function Home() {
     selectedVerbKind as Kind,
     selectedTense as Tense
   )
+
+  // Load bablar data from CSV
+  const { data: bablarData = [], isLoading: isLoadingBablar } = useBabData(selectedBablarVerbIndex)
 
   // Load saved selections from localStorage after hydration
   useEffect(() => {
@@ -56,6 +66,14 @@ export default function Home() {
         if (tense) setSelectedTense(tense)
         if (typeof savedShowPronouns === 'boolean') setShowPronouns(savedShowPronouns)
       }
+
+      const savedTab = localStorage.getItem(TAB_STORAGE_KEY)
+      if (savedTab !== null) {
+        const tabIndex = parseInt(savedTab, 10)
+        if (!isNaN(tabIndex) && tabIndex >= 0 && tabIndex <= 1) {
+          setSelectedTab(tabIndex)
+        }
+      }
     } catch (error) {
       console.error('Error loading saved selections:', error)
     }
@@ -73,6 +91,12 @@ export default function Home() {
     }
     localStorage.setItem(STORAGE_KEY, JSON.stringify(selections))
   }, [selectedVerbKind, selectedVerbIndex, selectedTense, showPronouns, isHydrated])
+
+  // Save selected tab to localStorage when it changes (only after hydration)
+  useEffect(() => {
+    if (!isHydrated) return
+    localStorage.setItem(TAB_STORAGE_KEY, selectedTab.toString())
+  }, [selectedTab, isHydrated])
 
   const renderWithAffixes = (text: string, person: Person, form: Form) => {
     if (!text) return text
@@ -180,83 +204,202 @@ export default function Home() {
     }
   }
 
+  const renderBablarCell = (text: string, columnIndex: number) => {
+    const [startChars, endChars] = BABLAR_HIGHLIGHT_CONFIG[columnIndex]
+
+    // Split by ' \ ' (backslash) or ' / ' (forward slash) and render each verb on a separate line
+    const verbs = text.split(/\s*[\\/]\s*/)
+
+    return (
+      <>
+        {verbs.map((verb, verbIndex) => {
+          const parts = parseWordWithHighlight(verb.trim(), startChars, endChars)
+          return (
+            <span key={verbIndex}>
+              {parts.map(({ char, type }, index) => (
+                <span key={index} className={type === 'stem' ? undefined : styles.affixRed}>
+                  {char}
+                </span>
+              ))}
+              {verbIndex < verbs.length - 1 && <br />}
+            </span>
+          )
+        })}
+      </>
+    )
+  }
+
+  const renderBablarTable = () => {
+    return (
+      <table className={styles.bablarTable}>
+        <thead>
+          <tr>
+            <th>البَابُ</th>
+            <th>المَاضِي</th>
+            <th>المُضَارِعُ</th>
+            <th>المَصْدَرُ</th>
+            <th>اسْمُ الفَاعِلِ</th>
+            <th>اسْمُ المَفْعُولِ</th>
+            <th>الأَمْرُ</th>
+          </tr>
+        </thead>
+        <tbody>
+          {bablarData.map((row) => (
+            <tr key={row.bab}>
+              <td className={styles.babNumber}>{row.bab}</td>
+              <td>{renderBablarCell(row.mazi, 0)}</td>
+              <td>{renderBablarCell(row.muzari, 1)}</td>
+              <td>{renderBablarCell(row.masdar, 2)}</td>
+              <td>{renderBablarCell(row.ismAlFail, 3)}</td>
+              <td>{renderBablarCell(row.ismAlMafool, 4)}</td>
+              <td>{renderBablarCell(row.amr, 5)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )
+  }
+
+  const renderVerbsTab = () => (
+    <>
+      <div className={styles.controls}>
+        <div className={styles.controlGroup}>
+          <MuiSelect
+            value={selectedVerbKind}
+            onChange={handleVerbFormChange}
+            options={VERB_KINDS.map((form) => ({
+              value: form.id,
+              label: form.name,
+            }))}
+            className={styles.formControl}
+          />
+        </div>
+
+        <div className={styles.controlGroup}>
+          <MuiSelect
+            value={selectedVerbIndex}
+            onChange={(value) => setSelectedVerbIndex(value as number)}
+            options={
+              VERB_KINDS.find((kind) => kind.id === selectedVerbKind)?.verbs.map((verb, index) => ({
+                value: index,
+                label: verb,
+              })) ?? []
+            }
+            className={styles.formControl}
+          />
+        </div>
+
+        <div className={styles.controlGroup}>
+          <MuiSelect
+            value={selectedTense}
+            onChange={(value) => setSelectedTense(value as string)}
+            options={TENSE_OPTIONS.map((tense) => ({
+              value: tense.id,
+              label: tense.name,
+              hasDividerBefore: tense.hasDividerBefore,
+              isNegative: tense.isNegative,
+            }))}
+            className={styles.formControl}
+          />
+        </div>
+      </div>
+
+      <div className={styles.checkboxContainer}>
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={showPronouns}
+              onChange={(e) => setShowPronouns(e.target.checked)}
+              sx={{
+                color: '#4a90e2',
+                '&.Mui-checked': {
+                  color: '#4a90e2',
+                },
+              }}
+            />
+          }
+          label={<span className={styles.checkboxLabel}>أَظْهِرِ الضَّمَائِرَ</span>}
+          sx={{
+            direction: 'rtl',
+          }}
+        />
+      </div>
+
+      <div className={styles.tableContainer}>
+        {isLoading ? <div className={styles.loading}>جَارٍ التَّحْمِيلُ...</div> : renderTable()}
+      </div>
+    </>
+  )
+
+  const renderBablarTab = () => (
+    <>
+      <div className={styles.controls}>
+        <div className={styles.controlGroup}>
+          <MuiSelect
+            value={selectedBablarVerbIndex}
+            onChange={(value) => setSelectedBablarVerbIndex(value as number)}
+            options={BABLAR_VERBS.map((verb, index) => ({
+              value: index,
+              label: verb,
+            }))}
+            className={styles.formControl}
+          />
+        </div>
+      </div>
+
+      <div className={styles.tableContainer}>
+        {isLoadingBablar ? (
+          <div className={styles.loading}>جَارٍ التَّحْمِيلُ...</div>
+        ) : (
+          renderBablarTable()
+        )}
+      </div>
+    </>
+  )
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <h2 className={styles.title}>تَعَلَّمْ تَصْرِيفَ الأَفْعَالِ الْعَرَبِيَّةِ</h2>
-        <div className={styles.controls}>
-          <div className={styles.controlGroup}>
-            <MuiSelect
-              // label="نَوْعُ الفِعْلِ:"
-              // labelId="verb-form-label"
-              value={selectedVerbKind}
-              onChange={handleVerbFormChange}
-              options={VERB_KINDS.map((form) => ({
-                value: form.id,
-                label: form.name,
-              }))}
-              className={styles.formControl}
-            />
-          </div>
 
-          <div className={styles.controlGroup}>
-            <MuiSelect
-              // label="الفِعْلُ:"
-              // labelId="verb-label"
-              value={selectedVerbIndex}
-              onChange={(value) => setSelectedVerbIndex(value as number)}
-              options={
-                VERB_KINDS.find((kind) => kind.id === selectedVerbKind)?.verbs.map(
-                  (verb, index) => ({
-                    value: index,
-                    label: verb,
-                  })
-                ) ?? []
-              }
-              className={styles.formControl}
-            />
-          </div>
-
-          <div className={styles.controlGroup}>
-            <MuiSelect
-              // label="الزَّمَنُ:"
-              // labelId="tense-label"
-              value={selectedTense}
-              onChange={(value) => setSelectedTense(value as string)}
-              options={TENSE_OPTIONS.map((tense) => ({
-                value: tense.id,
-                label: tense.name,
-                hasDividerBefore: tense.hasDividerBefore,
-                isNegative: tense.isNegative,
-              }))}
-              className={styles.formControl}
-            />
-          </div>
-        </div>
-
-        <div className={styles.checkboxContainer}>
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={showPronouns}
-                onChange={(e) => setShowPronouns(e.target.checked)}
-                sx={{
-                  color: '#4a90e2',
-                  '&.Mui-checked': {
-                    color: '#4a90e2',
-                  },
-                }}
-              />
-            }
-            label={<span className={styles.checkboxLabel}>أَظْهِرِ الضَّمَائِرَ</span>}
+        <Tabs
+          value={selectedTab}
+          onChange={(_, newValue) => setSelectedTab(newValue)}
+          sx={{
+            width: '100%',
+            maxWidth: '1200px',
+            '& .MuiTabs-indicator': {
+              backgroundColor: '#4a90e2',
+            },
+            direction: 'rtl',
+          }}
+        >
+          <Tab
+            label="الأَفْعَالُ"
             sx={{
-              direction: 'rtl',
+              fontSize: '1.5rem',
+              fontWeight: 500,
+              color: selectedTab === 0 ? '#4a90e2' : '#6c757d',
+              '&.Mui-selected': {
+                color: '#4a90e2',
+              },
             }}
           />
-        </div>
+          <Tab
+            label="البَابُ"
+            sx={{
+              fontSize: '1.5rem',
+              fontWeight: 500,
+              color: selectedTab === 1 ? '#4a90e2' : '#6c757d',
+              '&.Mui-selected': {
+                color: '#4a90e2',
+              },
+            }}
+          />
+        </Tabs>
 
-        <div className={styles.tableContainer}>
-          {isLoading ? <div className={styles.loading}>جَارٍ التَّحْمِيلُ...</div> : renderTable()}
+        <div className={styles.tabContent}>
+          {selectedTab === 0 ? renderVerbsTab() : renderBablarTab()}
         </div>
 
         <div className={styles.footer}>
