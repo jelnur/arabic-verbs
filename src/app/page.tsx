@@ -205,7 +205,8 @@ export default function Home() {
   }
 
   const renderBablarCell = (text: string, columnIndex: number) => {
-    const [startChars, endChars] = BABLAR_HIGHLIGHT_CONFIG[columnIndex]
+    // Detect Safari browser
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
 
     // Split by ' \ ' (backslash) or ' / ' (forward slash) and render each verb on a separate line
     const verbs = text.split(/\s*[\\/]\s*/)
@@ -213,12 +214,43 @@ export default function Home() {
     return (
       <>
         {verbs.map((verb, verbIndex) => {
+          // In Safari, render without highlighting to preserve text joining
+          if (isSafari) {
+            return (
+              <span key={verbIndex}>
+                {verb.trim()}
+                {verbIndex < verbs.length - 1 && <br />}
+              </span>
+            )
+          }
+
+          // In other browsers, apply highlighting
+          const [startChars, endChars] = BABLAR_HIGHLIGHT_CONFIG[columnIndex]
           const parts = parseWordWithHighlight(verb.trim(), startChars, endChars)
+
+          // Group consecutive parts of the same type to avoid breaking Arabic text joining
+          const groupedParts: Array<{ text: string; type: 'prefix' | 'stem' | 'suffix' }> = []
+          let currentGroup: { text: string; type: 'prefix' | 'stem' | 'suffix' } | null = null
+
+          parts.forEach((part) => {
+            if (currentGroup && currentGroup.type === part.type) {
+              currentGroup.text += part.char
+            } else {
+              if (currentGroup) {
+                groupedParts.push(currentGroup)
+              }
+              currentGroup = { text: part.char, type: part.type }
+            }
+          })
+          if (currentGroup) {
+            groupedParts.push(currentGroup)
+          }
+
           return (
             <span key={verbIndex}>
-              {parts.map(({ char, type }, index) => (
-                <span key={index} className={type === 'stem' ? undefined : styles.affixRed}>
-                  {char}
+              {groupedParts.map((group, index) => (
+                <span key={index} className={group.type === 'stem' ? undefined : styles.affixRed}>
+                  {group.text}
                 </span>
               ))}
               {verbIndex < verbs.length - 1 && <br />}
