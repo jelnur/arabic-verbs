@@ -1,6 +1,6 @@
 {
   "name": "arabic-verbs",
-  "version": "1.10.1-beta",
+  "version": "1.10.2-beta",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -17,19 +17,19 @@
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.6",
     "@tanstack/react-query": "^5.90.12",
-    "next": "^16.0.10",
+    "next": "^16.1.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.3",
-    "@types/node": "^25.0.1",
+    "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.49.0",
-    "@typescript-eslint/parser": "^8.49.0",
+    "@typescript-eslint/eslint-plugin": "^8.50.1",
+    "@typescript-eslint/parser": "^8.50.1",
     "eslint": "^9.39.2",
-    "eslint-config-next": "16.0.10",
+    "eslint-config-next": "16.1.1",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-unused-imports": "^4.3.0",
