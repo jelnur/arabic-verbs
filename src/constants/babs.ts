@@ -11,4 +11,4 @@ export const BABLAR_HIGHLIGHT_CONFIG: [number, number][] = [
   [0, 2], // amr
 ]
 
-export const BABLAR_VERBS = ['فَعَلَ', 'خَرَجَ']
+export const BABLAR_VERBS = ['فَعَلَ', 'خَرَجَ', 'شَكَرَ']
