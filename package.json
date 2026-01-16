@@ -1,6 +1,6 @@
 {
   "name": "arabic-verbs",
-  "version": "1.10.6-beta",
+  "version": "1.10.7-beta",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
