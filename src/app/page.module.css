@@ -233,7 +233,7 @@
 .githubLink:active {
   transform: translateY(1px);
 }
-.verbTable tbody tr:nth-child(odd):not(:first-child) {
+.verbTable tbody tr:nth-child(odd):not(:last-child) {
   background: #f0fff0;
 }
 
