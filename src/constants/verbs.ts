@@ -24,13 +24,13 @@ export const TENSE_OPTIONS: TenseOption[] = [
 ]
 
 export const PERSON_OPTIONS: PersonOption[] = [
-  { id: '1-mutekellim', name: 'المُتَكَلِّمُ' },
+  { id: '3-muzekker', name: 'الغَائِبُ المُذَكَّرُ' },
+  { id: '3-muennes', name: 'الغَائِبَةُ المُؤَنَّثَةُ' },
   { id: '2-muzekker', name: 'المُخَاطَبُ المُذَكَّرُ' },
   { id: '2-muennes', name: 'المُخَاطَبَةُ المُؤَنَّثَةُ' },
   { id: '2-muzekker-hadis', name: 'المُخَاطَبُ المُذَكَّرُ (حَدِيثٌ)' },
   { id: '2-muennes-hadis', name: 'المُخَاطَبَةُ المُؤَنَّثَةُ (حَدِيثٌ)' },
-  { id: '3-muzekker', name: 'الغَائِبُ المُذَكَّرُ' },
-  { id: '3-muennes', name: 'الغَائِبَةُ المُؤَنَّثَةُ' },
+  { id: '1-mutekellim', name: 'المُتَكَلِّمُ' },
 ]
 
 export const personOrder = PERSON_OPTIONS.map((p) => p.id)
